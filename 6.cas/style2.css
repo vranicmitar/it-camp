@@ -1,0 +1,34 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.div1{
+    background-color: bisque;
+    width: 200px;
+    height: 300px;
+   /* overflow: hidden; */
+   /* overflow: visible; */
+   /* overflow: scroll; */
+   overflow: auto;
+}
+
+.div2{
+    background-color: yellow;
+    width: 200px;
+    height: 150px;
+
+}
+
+.div2 p{
+  /*  font-size: large; */
+  font-size: 10px;
+  text-align: justify;
+  text-align-last: right;
+  
+}
+
+/* kontejner sirine 500px visine 400px pozadina bilo koja boja 
+neka se nalazi naslov velicine h2 boje bordo i paragraf od 60 karaktera boje tamnoplave
+paragraf treba biti centriran takodje neka bude podesen overflow auto na kontejner 
+kontejner treba imati klasu main
+velicina slova 20px */

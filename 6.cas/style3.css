@@ -1,0 +1,14 @@
+
+.main{
+    width: 500px;
+    height: 400px;
+    background-color: darkgray;
+}
+.main h2{
+    color: darkred;
+}
+.main p{
+    color:darkblue;
+    text-align: center;
+    overflow: auto;
+}

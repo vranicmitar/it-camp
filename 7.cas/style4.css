@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+}
+
+.main{
+    width: 400px;
+    height: 300px;
+    background-color: #ffe4c4;
+    border: 3px solid black;
+    padding: 20px 7px 15px;
+  /*  margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 150px; */
+   /* margin: 0px 20px 30px 0px;*/
+    /* Ako immamo 4 vredmosti za svojstvo za margin ili padding shvatanje css je sled. 
+    -1 vrednost se odnosi na margin top
+    -2 vrednost se odnosi na margin right
+    -3 vrednost se odnosi na margin bottom
+    -4 vrednost se odnosi na margin left */
+   /* margin: 30px 50px 40px; */
+   /*double,dashed,dotted za border linije*/
+   margin: 15px auto;
+   /*border-radius: 10px;*/
+  /* border-top-left-radius: 20px;*/
+   /* box-shadow: -3px -3px 50px rgba(0,0,0,1);*/
+   /* css box shadows beautiful*/
+    
+
+   
+
+}
+button{
+    padding: 50px;
+    margin-left: 500px;
+}
+.main +p{
+    margin-top: 20px;
+    text-align-last: center;
+    text-indent: 25px;
+    text-align: justify;
+}
+ p:hover{
+    background-color: #ffe4c4;
+    color: blue;
+ }
+ /*DOMACI ZADATAK:
+ -odraditi karticu kao sa slike
+ -glavna kartica da ima sirinu 400px,visinu 600px
+ -Fotografija da zauzima trecinu gl. kontejnera
+ -naslov h1 podnaslov h3 text h5
+ -text align last,justify
+ */
