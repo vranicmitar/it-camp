@@ -1,0 +1,39 @@
+body{
+    font-family: 'Patrick Hand', cursive;
+    background-image: url(./slika3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    margin: 20px auto;
+    width: 400px;
+    height: 600px;
+    background-color: #18c9a2;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+.main img{
+    width: 400px;
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
+
+}
+.main img:hover{
+    content: url(./slika2.jpg);
+}
+.main h2{
+    margin-top: 10px;
+    padding: 15px;
+}
+#icon{
+    font-size: 20px;
+    color: #000000;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.text-icon{
+    padding: 10px;
+}
+#icon:hover{
+    color: #add8e6;
+}
