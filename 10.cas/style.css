@@ -1,0 +1,43 @@
+/*Drugi nacina primene externih elementaa*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+body{
+    font-family: 'Indie Flower', cursive;
+}
+
+.main{
+    margin: 20px auto;
+    width: 400px;
+    height: 500px;
+    background-color: #da8b2b;
+    padding: 15px;
+}
+.main h1{
+    text-transform: capitalize;
+    text-align: center;
+}
+.main p{
+    text-indent: 20px;
+    text-align: justify;
+    text-align-last: center;
+}
+#icon{
+    font-size: 25px;
+    color: black;
+    margin-left: 100px;
+}
+/*
+    -Domaci zadatak:
+    -Kartica se nalazi na sredini
+    -Gornje dve ivice su oble,donje dve ivice su pod pravim uglom
+    -slika da zauzima 1/3 ukupne kartice
+    -slika predstavlja kucu koja se prodaje
+    -ispod slike se nalazi adresa kuce i grad (Neki podnaslov) i zemlja
+    -nakon tih informacija imamo :
+        -ikonice spavace sobe
+        - kupatila
+        -bazen
+        -kvadratura kuce
+
+*/
