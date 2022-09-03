@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Patrick Hand', cursive;
+    /*font-size: 1cm*/
+    /*font-size: 5mm;*/
+    /*font-size: 1in;*/
+    font-size: 16px;
+
+}
+
+.main {
+    /*width: 10in;*/
+    /*width: 80vw;*/
+    /*width: 80vmin;*/
+    width: 90%;
+    margin: auto;
+    background-color: bisque;
+    height: 60vh;
+    font-size: 2em;
+}
+.child{
+    background-color: cadetblue;
+    width: 50%;
+    /*font-size: 2rem;*/
+
+}
+
+/* Absolute lengths:
+    -cm-centimetar
+    -mm-milimetar
+    -in-inc (1 in = 96 px)
+    -px-pixel
+    -pt-points
+    -pc-picas (1 pc = 12 pt)
+*/
+
+/* Relative lengths: 
+    -em- Relativan u odnosu na font-size od parent elementa
+    -rem- Relativan u odnosu na font size od body - Ne nasledjuje velicinu od svog roditelja
+    -vw- Viewport of width -Ona je relativna u odnosu na sirinu ekrana
+    -vh - Viweport of height - ona je relativna u odnosu na visinu ekrana
+    -vmin - Viewport of min - ona je relativna 1% u odnosu na manji deo (sirina , vidina)
+    -vmax - viewport of max - ona je relativna u 1% u odnosu na veci deo (sirina , visina)
+    - % - relativan u odnosu na parent element
+
+*/
