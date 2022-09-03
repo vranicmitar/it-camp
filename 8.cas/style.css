@@ -1,0 +1,48 @@
+.main{
+    width: 400px;
+    height: 600px;
+    margin: 45px;
+    background-color: rgb(159, 216, 35);
+    border: solid black;
+    border-radius: 15px;
+   box-shadow: 3px 3px 9px;
+   display:inline-block;
+   /*padding: 20px;*/
+   /*float css*/
+}
+.main img{
+   width: 400px;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 15px 15px 0px 0px;
+}
+.main h1{
+    text-align: center;
+    text-transform:unset;
+    font-size: 28px;text-transform: capitalize;
+
+}
+.main h3{
+    font-size: 28px;text-transform: capitalize;
+    font-size: 20px;
+    text-align: center;
+}
+.main p{
+    text-indent: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    text-align: justify;
+}
+.main img:hover{
+    content: url("./slika2.jpg");
+    transition-property:initial;
+}
+.main p:hover{
+    background-color: #1ec255;
+    transition: all 0.5s ease-in-out;
+}
+/*.paragraf{
+    width: 200px;
+    display: inline-block;
+}*/
