@@ -2,6 +2,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Roboto Mono', monospace;
+}
 header{
     width: 100vw;
     height: 20vh;
@@ -14,8 +17,28 @@ header{
 }
 
 .nav{
-    display: inline-block;
+   
     float: right;
+}
+.main{
+    width: 30%%;
+    height: 100px;
+    text-align: center;
+    margin-top: 200px;
+    padding-left: 10px;
+   
+}
+
+.main p{
+    font-size: 15px;
+}
+.main2 {
+
+    width: 30%;
+    height: 100px;
+    border-
+    float: right;
+
 }
 /**{
     margin: 0;
@@ -40,6 +63,7 @@ header img{
     display: inline-block;
     margin-left: 65rem;
     margin-top: 0.5%;
+    m
 }
 
 .nav a{
