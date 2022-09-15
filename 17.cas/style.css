@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Combo', cursive;
+}
+
+.main{
+    width: 75%;
+    height: 500px;
+    background-color: aqua;
+    margin: auto;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    /*justify-content: space-evenly;*/
+    /*horizontalno poravnanje:
+        -justify content: start,felx-start,space-evenly,end,space-between,space-around
+    */
+    /*vertikalno poravnanje:
+        -aliign-items: felx-start (default),center,end
+    */
+}
+
+.box1{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    align-self: flex-start;
+}
+
+.box2{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(177, 141, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(39, 163, 32);
+    align-self: flex-end;
+}
+
+.links{
+    display: flex;
+    gap: 1.5em;
+    list-style:none;
+}
+
+.links a{
+    text-decoration: none;
+    color: burlywood;
+    font-size: large;
+}
