@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 15vh;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.naslov{
+    justify-content: center;
+    align-self: center;
+    margin-left: 10%;
+    font-size: 20px;
+    color: white;
+}
+
+.nav{
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+}
+.nav ul li{
+    padding-left: 2.5rem;
+}
+
+.nav li a{
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.dugme{
+    margin-top: -10px;
+    width: 150px;
+    height: 2.5rem;
+    border: none;
+    border-radius: 25px;
+}
+
+.main{
+
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 35%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    padding: 15px;
+    text-align: center;
+}
+
+.box1 h3{
+    margin-top: 15px;
+}
+
+.box2 h3{
+    margin-top: 15px;
+}
+
+.box3 h3{
+    margin-top: 15px;
+}
+
+.box4 h3{
+    margin-top: 15px;
+}
+
+.box2{
+    position: relative;
+    top: 2;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    padding: 15px;
+    text-align: center;
+}
+
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    padding: 15px;
+    text-align: center; 
+}
+
+
+.box4{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    padding: 15px;
+    text-align: center;
+}
+
+.main2{
+    width: 41%;
+    height: 50vh;
+    background-image: url('https://preview.colorlib.com/theme/parason/img/home/xoffer.png.pagespeed.ic.zQ08Cd8pOt.webp');
+}
+
+.main1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+/*https://preview.colorlib.com/theme/parason/img/home/xoffer.png.pagespeed.ic.zQ08Cd8pOt.webp*/
