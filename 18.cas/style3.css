@@ -107,7 +107,10 @@ header{
     padding: 15px;
     box-shadow: 1px 1px 3px;
 }
+.dugme:hover{
+    cursor: pointer;
 
+}
 .box4{
     text-align: center;
     width: 200px;
