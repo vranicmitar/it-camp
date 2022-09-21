@@ -146,11 +146,53 @@ header{
     width: 45%;
 }
 
+footer{
+    display: fixed;
+    width: 100%;
+    height: 150px;
+    background-color: purple;
+}
+
+.main1{
+    height: 75px;
+    width: 75px;
+    background-color: yellow;
+    border-radius: 250px;
+}
+
+.main2{
+    height: 75px;
+    width: 75px;
+    float: right;
+    background-color: red;
+    border-radius: 250px;
+}
+
+footer:hover .main1{
+    animation: left-to-right 2s ease-in-out forwards infinite alternate;
+}
 
 
+@keyframes left-to-right{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        background-color: red;
+        transform: translateX(1440px);
+    }
+}
 
+footer:hover .main2{
+    animation: right-to-left 2s ease-in-out forwards infinite alternate;
+}
 
-
-
-
-/*https://preview.colorlib.com/theme/parason/img/home/xoffer.png.pagespeed.ic.zQ08Cd8pOt.webp*/
+@keyframes right-to-left{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        background-color: yellow;
+        transform: translateX(-1440px);
+    }
+}
