@@ -61,8 +61,7 @@ header{
 }
 
 .mainchild1{
-    margin-top: 10px;
-    margin: 10vh 10%;
+    margin: 5rem auto;
     width: 80%;
     height: 80vh;
     display: flex;
@@ -197,138 +196,6 @@ footer:hover .main2{
     }
 }
 
-@media (max-width: 500px){
-    header{
-        width: 100%;
-        height: 10vh;
-        background-color: blue;
-        overflow: hidden;
-        margin: auto;
-    }
-
-    .naslov{
-        justify-content: center;
-        align-self: center;
-        margin-left: 10% ;
-        font-size: 15px;
-        color: white;
-    }
-
-    .nav{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        margin-right: 10%;
-    
-    }
-    .nav ul{
-        list-style-type: none;
-        display: flex;
-    }
-    .nav ul li{
-        padding-left: 0.5rem;
-    }
-    
-    .nav li a{
-        font-size: 12px;
-        color: white;
-        text-decoration: none;
-        list-style-type: none;
-    }
-
-    .dugme{
-        font-size: 10px;
-        margin-top: -10px;
-        width: 50px;
-        height: 1.5rem;
-        border: none;
-        border-radius: 25px;
-    }
-
-    footer{
-        width: 100%;
-        height: 10vh;
-        background-color: purple;
-        flex-direction: column;
-        position: relative;
-        top: 460px;
-    }
-    
-    .mainchild1{
-        width: 80%;
-        height: 80vh;
-        flex-direction: column;
-    }
-
-
-    .box1{
-        margin-top: 60%;
-        font-size: 12px;
-        text-align: center;
-        width: 200px;
-        height: 150px;
-        background-color:aqua;
-        box-shadow: 1px 1px 3px;
-        z-index: 5;
-    
-    }
-    
-    .box2{
-        margin-top: -30px;
-        font-size: 12px;
-        margin-left: -100px;
-        text-align: center;
-        width: 200px;
-        height: 150px;
-        background-color:aqua;
-        box-shadow: 1px 1px 3px;
-    }
-    
-    .box3{
-        margin-top: -180px;
-        margin-left: 665px;
-        font-size: 12px;
-        text-align: center;
-        width: 200px;
-        height: 150px;
-        background-color:aqua;
-        align-self: center;
-        box-shadow: 1px 1px 3px;
-    }
-
-    .box4{
-        margin-top: -25px;
-        margin-left: 570px;
-        font-size: 12px;
-        text-align: center;
-        width: 200px;
-        height: 150px;
-        background-color:aqua;
-        padding: 15px;
-        box-shadow: 1px 1px 3px;
-    }
-
-    .mainchild1 img{
-        margin-top: 100px;
-        width: 250px;
-    }
-
-    .main1{
-        height: 5vh;
-        width: 5vh;
-        background-color: yellow;
-        border-radius: 250px;
-    }
-    
-    .main2{
-        height: 5vh;
-        width: 5vh;
-        float: right;
-        background-color: red;
-        border-radius: 250px;
-    }
-}
-
 @media (min-width: 501px) and (max-width: 1024px){
     header{
         width: 100%;
@@ -458,5 +325,139 @@ footer:hover .main2{
         border-radius: 250px;
     }
 }
+
+@media (max-width: 500px){
+    header{
+        width: 100%;
+        height: 10vh;
+        background-color: blue;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .naslov{
+        justify-content: center;
+        align-self: center;
+        margin-left: 10% ;
+        font-size: 15px;
+        color: white;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-right: 10%;
+    
+    }
+    .nav ul{
+        list-style-type: none;
+        display: flex;
+    }
+    .nav ul li{
+        padding-left: 0.5rem;
+    }
+    
+    .nav li a{
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .dugme{
+        font-size: 10px;
+        margin-top: -10px;
+        width: 50px;
+        height: 1.5rem;
+        border: none;
+        border-radius: 25px;
+    }
+
+    footer{
+        width: 100%;
+        height: 10vh;
+        background-color: purple;
+        flex-direction: column;
+        position: relative;
+        top: 150px;
+    }
+    
+    .mainchild1{
+        width: 80%;
+        height: 80vh;
+        flex-direction: column;
+    }
+
+
+    .box1{
+        margin-top: 60%;
+        font-size: 12px;
+        text-align: center;
+        width: 200px;
+        height: 150px;
+        background-color:aqua;
+        box-shadow: 1px 1px 3px;
+        z-index: 5;
+    
+    }
+    
+    .box2{
+        margin-top: -30px;
+        font-size: 12px;
+        margin-left: -100px;
+        text-align: center;
+        width: 200px;
+        height: 150px;
+        background-color:aqua;
+        box-shadow: 1px 1px 3px;
+    }
+    
+    .box3{
+        margin-top: -180px;
+        margin-left: 665px;
+        font-size: 12px;
+        text-align: center;
+        width: 200px;
+        height: 150px;
+        background-color:aqua;
+        align-self: center;
+        box-shadow: 1px 1px 3px;
+    }
+
+    .box4{
+        margin-top: -25px;
+        margin-left: 570px;
+        font-size: 12px;
+        text-align: center;
+        width: 200px;
+        height: 150px;
+        background-color:aqua;
+        padding: 15px;
+        box-shadow: 1px 1px 3px;
+    }
+
+    .mainchild1 img{
+        margin-top: 100px;
+        width: 250px;
+    }
+
+    .main1{
+        height: 5vh;
+        width: 5vh;
+        background-color: yellow;
+        border-radius: 250px;
+    }
+    
+    .main2{
+        height: 5vh;
+        width: 5vh;
+        float: right;
+        background-color: red;
+        border-radius: 250px;
+    }
+}
+
+
 
 
