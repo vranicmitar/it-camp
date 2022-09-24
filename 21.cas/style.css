@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    margin: auto;
+    width: 80%;
+    height: 130vh;
+    background-color: #7fffd4;
+    display: grid;
+    /* grid-template-columns:150px 150px; dve vrednosti zapravo predstavljaju da imamo dve kolone*/
+    /* grid-template-columns:3fr 1fr 1fr; slicno flex-grow gde se redjaju elementi tako sto ce popuniti celu sirinu parenta */
+    grid-template-columns: repeat(3,  1fr);   
+    /* (4,  1fr); */
+    /* grid-template-rows: 200px 150px;svaka vrednost predstavlja visinu elemenata za taj red */
+    /* grid-auto-rows: 200px; predstavlja visinu svih redova  */
+    grid-auto-rows: minmax(200px, auto);
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+
+    grid-template-areas:
+        "header header header"
+        "section section article"
+        "main main article"
+    ;   
+
+}
+
+.box1{
+    /* height: 150px; */
+    background-color: blue;
+    grid-area: header;
+}
+
+.box2{
+    /* height: 150px; */
+    background-color: red;
+    grid-area: section;
+}
+
+.box3{
+    /* height: 150px; */
+    background-color: yellow;
+    grid-area: article;
+}
+
+.box4{
+    /* height: 150px; */
+    background-color: lightblue;
+    grid-area: main;
+}
+
+.box5{
+    /* height: 150px; */
+    background-color: green;
+}
+
+
+.box6{
+    /* height: 150px; */
+    background-color: darkblue;
+}
+
+
+.box7{
+    /* height: 150px; */
+    background-color: rgb(208, 100, 100);
+}
+
+
+
+
+
