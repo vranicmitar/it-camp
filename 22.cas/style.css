@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+    background-color: #7fffd4;
+    display: grid;
+    grid-template-columns: repeat(3,  150px);   
+    grid-auto-rows: 150px;
+    grid-gap: 15px;  
+
+    /* Horizontalno poravnanje: */
+    /* justify-content: center; */
+    /* justify-content: end; */
+    justify-content: space-around;
+
+    /* Vertikalno poravnanje: */
+    align-content:space-around;
+    /* align-content:space-between; */
+
+    /* justify-items:start; */
+    justify-items: center;
+    align-items: center;
+
+}
+
+.box1{
+    /* height: 150px; */
+    background-color: blue;
+    align-self: flex-end;
+    justify-self: flex-start;
+  }
+
+.box2{
+    /* height: 150px; */
+    background-color: red;
+}
+
+.box3{
+    /* height: 150px; */
+    background-color: yellow;
+}
+
+.box4{
+    /* height: 150px; */
+    background-color: lightblue;
+}
+
+.box5{
+    /* height: 150px; */
+    background-color: green;
+}
+
+
+.box6{
+    /* height: 150px; */
+    background-color: darkblue;
+    align-self: flex-start;
+    justify-self: end;
+}
+
+
+.box7{
+    /* height: 150px; */
+    background-color: rgb(208, 100, 100);
+}
