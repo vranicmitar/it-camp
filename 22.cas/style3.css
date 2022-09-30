@@ -41,3 +41,7 @@ footer{
 #icon{
     font-size: 35px;
 }
+
+.icons i:hover{
+    color: aquamarine;
+}
