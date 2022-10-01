@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Abyssinica SIL', serif;
+}
+
+#kuca{
+    font-size: 25px;
+    color: red;
+}
+
+#tt{
+    font-size: 35px;
+}
+
+.container p{
+    letter-spacing: 2px;
+    word-spacing: 25px;
+    line-height: 30px;
+    font-weight: 800;
+}
