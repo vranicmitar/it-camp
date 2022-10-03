@@ -1,0 +1,29 @@
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button{
+    background-color: transparent;
+    color: beige;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid blue;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: blanchedalmond;
+    min-width: 150px;
+    z-index: 2;
+}
+
+.dropdown:hover{
+    background-color: chartreuse;
+    color: red;
+}
+
+
+
