@@ -1,29 +1,8 @@
-.wrapper{
-    width: 100%;
-    margin: 0 auto;
+input{
+    width: 350px;
+    height: 35px;
 }
 
-.button{
-    background-color: transparent;
-    color: beige;
-    padding: 15px;
-    font-size: 15px;
-    cursor: pointer;
-    border: 1px solid blue;
+#subject{
+    width: 710px;
 }
-
-.dropdown{
-    display: none;
-    position: absolute;
-    background-color: blanchedalmond;
-    min-width: 150px;
-    z-index: 2;
-}
-
-.dropdown:hover{
-    background-color: chartreuse;
-    color: red;
-}
-
-
-
