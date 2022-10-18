@@ -50,7 +50,7 @@ console.log("Ovo je nas prvi ispis u conzoli");
 
     console.log(daLiPadaKisa);
 
-    // 5. undefined - je tip podatka koji se javlja kada imamo deklarisanu neku promenljivu ali joj nismo dodelili vrdnost.
+    // 5. undefined - je tip podatka koji se javlja kada imamo deklarisanu neku promenljivu ali joj nismo dodelili vrednost.
     // U tom slucaju i vrednost i tip promenljive je undefined.
 
     let prom1;  // deklarisanje promenljive 
