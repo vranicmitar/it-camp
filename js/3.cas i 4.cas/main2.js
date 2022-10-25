@@ -91,7 +91,7 @@ console.log(Boolean(prvideo + " " + drugideo));
 console.log("Omar" + " " + 3); // rezultat spajanja stringa i broja je UVEK STRING !!!
 console.log(3 + " " + "Omar");
 console.log(typeof(3 + " " + "Omar"));
-console.log(3 +  "2"); // spajanje  bez obzira sto je plus - rezultat je 32 zato sto ga program cita kao string
+console.log(3 +  "2"); // spajanje  bez obzira sto je plus - rezultat je 32 zato sto ga program cita kao string  // SAMO KOD PLUSA VAZI OVO
 // console.log(3 +  2); // sabiranje
 
 // JS ce pokusati da prevede string u broj i da izvrsi racunsku operaciju...
@@ -127,13 +127,13 @@ console.log(a === d); // pritom proverava i tip
 
 console.log(b != c);
 
-// 4.4 !== - ispituje da li je razlicita vrednost ili razlicit tip
+// 4.4 !== - ispituje da li je razlicita vrednost ili razlicit tip  // mora samo jedan uslov da ispuni da bi bilo true uostalom je false
 
 console.log(a !== d);
 
 // 4.5 > - da li je prva vrednost veca od druge : 
 
-console.log(b > c);
+console.log(b > c);  // true 
 
 // 4.6 < - da li je prva vrednost manja od druge : 
 
@@ -185,4 +185,21 @@ prom4 > 0 || prom5 > 0 || prom6 > 0
 
 console.log(!Boolean(prvideo + " " + drugideo));
 
+
+// 6.Tip operatori (Type operators);
+
+// 6.1  typeof - se koristi za ispitivanje tipa odredjene promenljive
+
+isSunny = false;
+console.log(typeof isSunny);
+
+// 6.2  instanceof - se koristi za proveru da li je neka promenljiva instanca objekta
+
+
+const obj = {
+    ime: "Omar",
+    prezime: "Semsovic"
+};
+
+console.log (  obj instanceof Object )  // rezultat - true.
 
