@@ -3,30 +3,43 @@
 let a = +prompt("Unesite prvi broj: ");
 let b = +prompt("Unesite drugi broj: ");
 
-if( a === b ) {
+// Za proveru da li je vrednost nekog broja NaN se koristi metoda : isNan (vrednost) 
+if (isNaN(a) || isNaN(b)) {
+    console.log("Unete vrednosti moraju biti brojevi !!!");
+}
+
+ else if( a === b ) {
     let  kvadrat = a**2;
     console.log(kvadrat);
 } 
 else if(a !== b) {
-    let pravougaonik = 2*(a + b);
+    let pravougaonik = a * b;
     console.log(pravougaonik);
 }
-else {
-    console.log("Niste uneli brojeve");
-}
-
 // 2.zadatak
+
+// let x = +prompt("Unesite x: ");
+// let y = +prompt("Unesite y: ");
+// if (y !== 0) {
+//     let kolicnik = x/y;
+//     console.log(kolicnik);
+// }
+// else {
+//     console.log("Deljenje nije moguce");
+// }
+
+// drugi nacin
 
 let x = +prompt("Unesite x: ");
 let y = +prompt("Unesite y: ");
-if (y !== 0) {
-    let kolicnik = x/y;
-    console.log(kolicnik);
-}
-else {
-    console.log("Deljenje nije moguce");
-}
 
+if (isNaN(x) || isNaN(y)) {
+    console.log("Vrednosti moraju biti brojevi");
+} else if (y === 0) {
+    console.log("Deljenje 0 nije moguce !!!");
+} else {
+    console.log("Kolicnik unetih brojeva je:" + x / y);
+}
 
 
 // Domaci zadaci:
