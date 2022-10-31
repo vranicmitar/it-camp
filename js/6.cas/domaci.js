@@ -13,8 +13,8 @@ for (let i = 50; i<=100; i++) {
 }
 // 3.zadatak - Ispisati dvostruku vrednost brojeva od 6 do 14 -->
 
-for (let i = 6; i<=28; i*=2) {
-    console.log( i );
+for (let i = 6; i<=14; i++) {
+    console.log( i * 2 );
 }
 
 // 4.zadatak - Suma neparnih prirodnih brojeva od 10 do 20 -->
