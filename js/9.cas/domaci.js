@@ -1,4 +1,4 @@
-let recenica = prompt("Unesi neku recenicu: ");
+let recenica = String("Unesi neku recenicu: ");
 const duzina = recenica.length;
 
 for (i = 0; i < duzina; i++) {
