@@ -17,6 +17,7 @@ for(let i =99; i>=-99; i--) {
         console.log(i+14);
     }
 }
+// II drugi nacin
 
 let iterator = 99;
 while (iterator > -100) {
