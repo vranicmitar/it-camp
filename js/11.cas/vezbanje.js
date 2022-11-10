@@ -34,8 +34,8 @@ for (a = 0; a < duzina; a++) {
     {
         novaRecenica += recenica[a].toUpperCase();
     }
-    else if () {
-    novaRecenica += "."
+    else if (recenica[a] === "") {
+    novaRecenica += ".";
 }
  else {
 novaRecenica += recenica[a];

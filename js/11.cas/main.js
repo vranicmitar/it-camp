@@ -41,5 +41,6 @@ for (i = 0; i < duzina5; i++) {
 console.log (novarecenica5);
 
 
+let prom = Number("25");
 
-
+console.log(prom);
