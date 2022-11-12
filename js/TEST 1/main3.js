@@ -12,13 +12,15 @@
 let recenica = "Nakon danasnjeg testa cemo znati ko ce nastaviti sa drugim ciklusom it campa";
 let duzina = recenica.length;
 let novaRecenica = "";
-for (a = 0; a < duzina; a++) {
-    if(recenica[a] === "a" || recenica[a] === "e" || recenica[a] === "i" || recenica[a] === "o" || recenica[a] === "u" )
+for (i = 0; i < duzina; i++) {
+    if(recenica[i] === "a" || recenica[i] === "e" || recenica[i] === "i" || recenica[i] === "o" || recenica[i] === "u" )
     {
-        novaRecenica += recenica[a].toUpperCase();
+        novaRecenica += recenica[i].toUpperCase();
+    } else if (i === duzina){
+        novaRecenica += ".";
     } else {
-        novaRecenica += recenica[a];
+        novaRecenica += recenica[i];
     }
 }
 
-console.log(novaRecenica +".");
+console.log(novaRecenica);
