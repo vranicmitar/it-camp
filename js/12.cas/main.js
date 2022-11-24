@@ -80,6 +80,16 @@ console.log(povrsina(4, 6));
 console.log(povrsina(4, 4));
 
 
+// 1.zadatak
 
+let kvadratbroja = function(a) {
+    if (isNaN(a)) {
+        return "Brojevi moraju biti korektni";
+    } else {
+        return "Kvadrat datog broja iznosi" +" "+ a**2;
+    }
+} 
+console.log(kvadratbroja(+prompt("Unesi broj:")));
 
+// 2.zadatak
 
