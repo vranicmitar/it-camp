@@ -73,3 +73,33 @@ const mojaFunkcija = function(recenica) {
 
 console.log(mojaFunkcija("Kraj casa"));
 console.log(mojaFunkcija("Kraj 2 casa rada sa stringovima"));
+
+
+// Domaci zadatak.
+// Napraviti funkciju koja trazi od korisnika da unese neku recenicu, zatim funkcija vraca,
+//  datu recenicu u vise oblika (spojenu u jedan string).
+// 1. recenicu ispisanu velikim slovima,
+// 2. recenicu ispisanu malim slovima,
+// 3. pola recenice ispisano velikim slovima, pola recenice ispisano malim slovima
+// 4. Ako se u recenici nadje rec 'skola' neka bude zamenjena recju fakultet,
+// 5. Neka bude ispisano prvih 10 karaktera unete recenice,
+// 6. Neka bude ispisano poslednjih 10 karaktera unete recenice.
+
+const funkcija = function() {
+    const recenica = prompt("Unesite neku recenicu: ");
+    let duzina = recenica.length;
+
+    let nova1 = recenica.toLocaleUpperCase();
+    let nova2 = recenica.toLocaleLowerCase();
+
+    polaDuzine = recenica.length % 2 === 0 
+        ? recenica.length / 2 
+        : Math.ceil(recenica.length / 2);
+    let isecak1 = recenica.substr(0, polaDuzine).toUpperCase();
+    let isecak2 = recenica.substr(polaDuzine, duzina).toLowerCase();
+    let nova3 = recenica.replace(/skola/gi, "fakultet");
+    let nova4 = recenica.slice(0, 10);
+
+}
+
+console.log(funkcija());
