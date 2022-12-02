@@ -30,3 +30,13 @@ console.log(char3);
 console.log(char33); // rezultat je undefined
 
 
+// Domaci zadatak --->
+
+const sabiranje4broja = (br1, br2, br3, br4) => {
+    if(isNaN(br1) || isNaN(br2) || isNaN(br3) || isNaN(br4)) {
+        return "Nisu uneta 4 broja"
+    }
+  return br1 + br2 + br3 + br4;
+};
+
+console.log(sabiranje4broja(1,2,3,4))
