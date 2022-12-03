@@ -38,5 +38,25 @@ const sabiranje4broja = (br1, br2, br3, br4) => {
     }
   return br1 + br2 + br3 + br4;
 };
-
 console.log(sabiranje4broja(1,2,3,4))
+
+
+// Domaci zadatak
+
+const sumaCifara = () => {
+  if (isNaN(broj) || (broj < 1000 || broj > 9999) ) {
+      return "Argument nije korektan";
+  } else {
+      const cifraJedinice = broj % 10;
+      const cifraDesetice = Math.trunc  ((broj % 100) / 10) // trunc brise ostatak
+      const cifraStotina = Math.trunc  ((broj % 1000) / 100) // trunc brise ostatak
+      const cifraHiljada = Math.trunc  (broj / 1000) // trunc brise ostatak
+      return cifraJedinice + cifraDesetice + cifraStotina + cifraHiljada;
+  }
+}
+console.log(sumaCifara(1,2,3,4))
+
+
+
+
+
