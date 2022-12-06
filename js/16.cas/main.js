@@ -61,4 +61,6 @@ function position(sentence) {
     }
 }
 
-console.log(position("ko osvaja svetsko.Stvarno ko osvaja?"))
+console.log(position("ko osvaja svetsko.Stvarno ko osvaja?"));
+
+
