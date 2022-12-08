@@ -9,4 +9,4 @@ function limunada(par1, par2) {
     }
 }
 
-console.log(limunada(1.5,10));
+console.log(limunada(4,19));
