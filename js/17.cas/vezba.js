@@ -53,7 +53,8 @@ console.log(cokolada(4,19));
 
 
 
-// Preko arrow function =>
+// preko arrow fnctn
+
 const cokolada1 = (br1,br2) => {
     const ukupnoCokolada = Math.floor(br2 / br1);
     if (br1 < 1 || br1 > 20 || isNaN(br1)) {
