@@ -77,37 +77,27 @@ console.log(recenica6);
 // Ako recenica pocinje sa recju "Automobil" neka se vrati boolean true.
 // Ako je recenica parne duizne neka se vrati broj pojavljivanja reci "kuca".
 
-// function zadatak(recenica) {
-//     const search = recenica.search(/skola/gi);
-//     const vrati = recenica.startsWith("Automobil");
-//     let duzina = recenica.lenght;
-//     if (duzina % 2 === 0) {
-//         const match = recenica.match("kuca")
-//     }
-// }
-
-// console.log(zadatak("Automobil"))
 
 function task(recenica) {
     if (recenica.includes("skola")) {
-        return recenica.indexOf("skola")
-    } else if(recenica.startsWith("Automobil")) {
-        return true;
+      return recenica.indexOf("skola");
+    } else if (recenica.startsWith("Automobil")) {
+      return true;
     } else if (recenica.length % 2 === 0) {
-        let brojac = 0;
-        if (recenica.includes("kuca")) {
-            for (i = 0; i <= recenica.length - 1; i++) {
-                if (recenica.indexOf("kuca") === i) {
-                    brojac++;
-                }
-            }
+      let brojac = 0;
+      if (recenica.includes("kuca")) {
+        for (let i = 0; i <= recenica.length - 1; ) {
+          if (recenica.includes("kuca", i)) {
+            brojac++;
+            i += 3;
+          }
+          i++;
         }
-    } 
-    return `Broj pojavljivanja unutar reci "kuca" unutar datog stringa je ${brojac}`;
-}
-
-console.log(task("skola je uticala da Alen i Hatidza spavaju za vreme casa"));
-console.log(task("Automobil"));
-console.log(task("Ja zivim u kuca"));
-
-
+      }
+      return `Broj pojavljivanja reci "kuca" unutar datog stringa je ${brojac}.`;
+    }
+  }
+  console.log(task("skola je uticala da Alen i Hatidza spavaju za vreme casa."));
+  console.log(task("Automobil je prodat!"));
+  console.log(task("Ja zivim u stanu."));
+  console.log(task("kuca kucakuca kuca kuca."));
