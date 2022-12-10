@@ -107,11 +107,33 @@ const duzinaPrveReci = function (recenica) {
 function plaindrom(recenica) {
     let duzina = recenica.length;
     for (i = 0; i < duzina ; i++) {
-        if (recenica[i] === recenica[duzina -1 -i]) {
-            return "Jeste palindrom";
-        } else {
-            return "Nije palindrom"
+        if (recenica[i] !== recenica[duzina -1 - i]) {
+            return "Nije palindrom";
         }
     }
+    return "Jeste palindrom"
+
 }
-console.log(plaindrom("ana voli milovana"));
+console.log(plaindrom("anavolimilovana"));
+// radi!!!!!!!!!!!!!!!!!!!!
+
+// 2.nacin
+
+function palindrom(rec) {
+    let novarec = "";
+    // pravljenje obrnutog stringa -->
+    for (i = rec.length - 1; i >=0; i--) {
+        novarec += rec[i];
+    } 
+    if (rec === novarec) {
+        return "Data rec jeste palindrom"
+    } else {
+        return "Data rec nije palindrom"
+    }
+
+}
+
+console.log(plaindrom("anavolimilovanb"))  // nije plaindrom
+console.log(plaindrom("ana voli milovana"))  // nije plaindrom
+
+
