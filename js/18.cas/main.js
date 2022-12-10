@@ -67,10 +67,51 @@ console.log(razmak("Pera ima devojku"))
 console.log(razmak("Pera"));
 
 
-// Ispisi duzinu prve reci unetog stringa.Npr `Pera ima devojku`, rezultat je 4.Podrazumeva se da ineti string neam vodece razmake;
+// 5. Ispisati dužinu prve reči unetog stringa. Npr. za uneto 'Pera ima devojku', rezultat je 4. Podrazumeva se da uneti string nema vodeće razmake.
 
-function duzina(recenica) {
-    
+const duzinaPrveReci = function (recenica) {
+    const index = recenica.search(" ");
+    return `Prva rec ima ${index} karaktera.`;
+  };
+  
+  console.log(duzinaPrveReci("PRVA"));
+  
+  const duzinaPrveReci2 = function (recenica) {
+    let brojac = 0;
+    for (let i = 0; i < recenica.length; i++) {
+      if (recenica[i] === " ") {
+        break;
+      } else {
+        brojac++;
+      }
+    }
+    return `Prva rec ima ${brojac} karaktera.`;
+  };
+  console.log(duzinaPrveReci2("koliko ima karaktera prva rec?"));
+  
+  // 6.	Iz unetog stringa treba izdvojiti N znakova sa leve strane. Npr. za string 'Pera ima devojku' i N=6, dobija se 'Pera i'. Ako je N veće od dužine stringa, kao rezultat se dobija ceo string.
+  
+  const prvihN = (recenica, n) => {
+    if (n > recenica.length) {
+      return recenica;
+    } else {
+      return recenica.substr(0, n);
+    }
+  };
+  console.log(prvihN("Treba vratiti prvih 10 karaktera.", 10));
+  console.log(prvihN("Treba vratiti prvih 100 karaktera.", 100));
+  
+  // Domaci zadatak:
+  // Proveriti da li je uneti string palindrom (potpuno je isti kada se čita od pozadi). Npr. 'anavolimilovana' je palindrom.
+
+function plaindrom(recenica) {
+    let duzina = recenica.length;
+    for (i = 0; i < duzina ; i++) {
+        if (recenica[i] === recenica[duzina -1 -i]) {
+            return "Jeste palindrom";
+        } else {
+            return "Nije palindrom"
+        }
+    }
 }
-
-
+console.log(plaindrom("ana voli milovana"));
