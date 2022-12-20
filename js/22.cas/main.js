@@ -105,3 +105,18 @@ console.log(Number([])); // 0
 console.log(Number({})); // NaN
 
 
+function domaci(broj) {
+    let broj1 = broj.toString();
+    let novibr = "";
+    for (let i = 0; i < broj1.length; i++) {
+      if (broj1.length !== 4) {
+        return `Argument mora imati 4 cifre`
+      } else if (i % 2 === 0) {
+        novibr += broj1[i + 2];
+      } else if (i % 2 !== 0) {
+        novibr += broj1[i - 2];
+      }
+    }
+    return novibr;
+  }
+console.log(domaci(1234));
