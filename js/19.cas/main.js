@@ -4,7 +4,7 @@
 function string(recenica) {
     const index = recenica.indexOf(" ");
     const prvaRec = recenica.slice(0, index);
-    const index1 = recenica.lastIndexOf(" ");;
+    const index1 = recenica.lastIndexOf(" ");
     const poslednjaRec = recenica.slice(index1);
     const recenica2 = prvaRec.concat(poslednjaRec);
     return recenica2;
@@ -23,6 +23,20 @@ const izdvojiti = (string, pocetak, duzina) => {
 
 console.log(izdvojiti("Pera ima devojku", 5,9))
 
-// Unosi se string A i znak Z.Kreirati novi string B koji se dobija tako sto se iz unetog stringa izbacuje pojava znaka Z.Npr.
+// 3.	Unosi se string A i znak Z. Kreirati novi string B koji se dobija tako što se iz unetog stringa izbacuje svaka pojava znaka Z. Npr. za unet string "Madagaskar" i znak "a", dobijamo rezultat "Mdgskr"
 
-
+const bezZnaka = (string, znak) => {
+    //   const noviString = string.replace(/znak/g , "");
+    let noviString = "";
+    for (let i = 0; i < string.length; i++) {
+      if (string[i] !== znak) {
+        noviString += string[i];
+      }
+    }
+    return noviString;
+  };
+  
+  console.log(bezZnaka("Madagaskar", "a"));
+  
+  // Domaci zadatak:
+  // Izdvojiti N znakova sa desne strane (poslednjih N znakova) unetog stringa. Npr. za string 'Pera ima devojku' i N=5, dobija se 'vojku'.
