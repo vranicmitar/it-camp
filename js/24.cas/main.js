@@ -99,3 +99,20 @@ console.log(Math.cos(0));
 console.log(Math.cos(Math.PI/2));
 
 
+// 32. Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
+
+// Ponovni zadatak 
+
+const blizi100 = (num1,num2) => {
+    const razlika1 = Math.abs(100 - num1)
+    const razlika2 = Math.abs(100 - num2)
+    const bliziBroj = razlika1 > razlika2 ? num2 : razlika1 < razlika2 ? num1 : null
+
+    if(bliziBroj === null) {
+        return `Brojevi su jednako udaljeni od broja 100`;
+    } else {
+        return `Blizi je broj ${bliziBroj}`;
+    }
+}
+console.log(blizi100(-150,40));
+console.log(blizi100(-150,-150));
