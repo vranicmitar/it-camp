@@ -10,8 +10,6 @@ function vracanajevci(par1,par2,par3) {
 }
 console.log(vracanajevci(5,15,55));
 
-// dva argumenta koji je blizi 100;
-
 // 32. Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
 
 function blizi100(x, y) {
@@ -19,8 +17,8 @@ function blizi100(x, y) {
          return `Uneti argumenti moarju biti brojevi`
       } 
       if (x != y) {
-         x1 = Math.abs(x - 100);
-         y1 = Math.abs(y - 100);
+         let  x1 = Math.abs(x - 100);
+         let  y1 = Math.abs(y - 100);
       if (x1 < y1) {
          return `Broj ${x} je blizi broju 100 nego broj ${y}`;
       } else if (y1 < x1) {
@@ -29,8 +27,30 @@ function blizi100(x, y) {
       }
    return `Brojevi su jednako udaljeni od broja 100`;
  }
- console.log(blizi100(5,15))
+ console.log(blizi100(150,-15))
  
+//  2.nacin
+
+function blizi(par1,par2) {
+   let i;
+   let brojac1 = 0;
+   let brojac2 = 0;
+   if (par1 >= 100) {
+      for (i = par1; i>=100; i--) {
+         brojac1++;
+      }
+   }
+   else for(i = par1; i <= 100; i++) {
+      brojac2++;
+   }
+   if (brojac2 > brojac1) {
+      return `Drugi je blizi`;
+   } else if (brojac1 > brojac2) {
+      return `Prvi je blizi`
+   }
+}
+
+console.log(blizi(105,90))
 
 // 33. Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 
@@ -43,7 +63,7 @@ const ispisi = function(a,b) {
       return `Uneti brojevi nisu u opsegu od 40 do 60 ili od 70 do 100`
    }
 }
-console.log(ispisi(40,58));
+console.log(ispisi(45,77));
 
 // 34. Write a JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive.
 
