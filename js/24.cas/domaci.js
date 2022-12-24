@@ -7,7 +7,7 @@ function poluprecnik(r1) {
   let O = 2 * r1 * Math.PI;
   return Math.trunc(O);
 }
-console.log(poluprecnik(15));
+console.log(poluprecnik(6));
 
 // 2.
 // Napraviti funkciju koja izracunava povrsinu kruga, gde
@@ -18,7 +18,7 @@ function precnik(R) {
   let P = r1 ** 2 * Math.PI;
   return Math.trunc(P);
 }
-console.log(precnik(20));
+console.log(precnik(5));
 
 // 3.
 // Napraviti funkciju za pretvaranje radijana u stepene.
