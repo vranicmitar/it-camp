@@ -78,6 +78,42 @@ function bolji(m1, p1, m2, p2) {
 }
 console.log(bolji(30, 40, 30, 40));
 
-function NZD(a, b) {
-  const manji = Math.min(a, b);
+//  Write a JavaScript function to get the greatest common divisor (NZD) of two integers.
+
+const NZD = (a, b) => {
+  // const manji = a < b ? a : b
+  let manji = Math.min(a, b);
+  let zeljeniBroj;
+  while (manji >= 1) {
+    if (a % manji === 0 && b % manji === 0) {
+      zeljeniBroj = manji;
+      break;
+    }
+    manji--;
+  }
+  return zeljeniBroj;
+};
+
+console.log(NZD(10, 15));
+console.log(NZD(5, 10));
+console.log(NZD(4, 6));
+
+// NZD
+
+// Domaci zadatak.
+// Write a JavaScript function to get the least common multiple (NZS) of two numbers.
+
+function NZS(a, b) {
+  const veci = Math.max(a, b);
+  let i = veci;
+  let nzs;
+  while (true) {
+    if (i % a === 0 && i % b === 0) {
+      nzs = i;
+      break;
+    }
+    i++;
+  }
+  return nzs;
 }
+console.log(NZS(5, 4));
