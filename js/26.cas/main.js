@@ -44,3 +44,15 @@ console.log(datum2);
 
 // Date.parse(nekiDatum) - nam vraca broj milisekundi od 1.1.1970 do poslatog Datuma.
 console.log(Date.parse(datumRdodjenja));
+
+// Napraviti funkciju koja racuna razliku u danima izmedju sledeca dva datuma:
+// "1999-05-24" i "2004-09-15"
+
+function racunajBrojDana(prviDatum, drugiDatum) {
+  let prvi = new Date(prviDatum);
+  let drugi = new Date(drugiDatum);
+  let razlika = drugi - prvi;
+  let ukupnoDana = razlika / (1000 * 3600 * 24);
+  return ukupnoDana;
+}
+console.log(racunajBrojDana("1999-05-24", "2004-09-15"));
