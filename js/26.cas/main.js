@@ -56,3 +56,10 @@ function racunajBrojDana(prviDatum, drugiDatum) {
   return `Razlika izmedju dva uneta datuma je ${ukupnoDana} dan`;
 }
 console.log(racunajBrojDana("1999-05-24", "2004-09-15"));
+
+// 2.nacin -->
+
+function domaci(par1, par2) {
+  return (Date.parse(par1) - Date.parse(par2)) / 86400000;
+}
+console.log(domaci("2001 sep 15", "99 may 24"));
