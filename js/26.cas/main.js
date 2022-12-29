@@ -53,6 +53,6 @@ function racunajBrojDana(prviDatum, drugiDatum) {
   let drugi = new Date(drugiDatum);
   let razlika = drugi - prvi;
   let ukupnoDana = razlika / (1000 * 3600 * 24);
-  return ukupnoDana;
+  return `Razlika izmedju dva uneta datuma je ${ukupnoDana} dan`;
 }
 console.log(racunajBrojDana("1999-05-24", "2004-09-15"));
