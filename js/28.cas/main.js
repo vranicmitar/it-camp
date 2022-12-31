@@ -105,3 +105,18 @@ console.log(daniStr3);
 const subota = dani.pop();
 console.log(dani);
 console.log(subota); // nam vraca zapravo izbrisani element
+
+// Iz adtog niza ispisati koliko elemenata niza ke tipa string koliko tipa number koliko boolean
+// koliko elementa ima niz
+
+const nizz = [
+  "jagoda",
+  25,
+  true,
+  "mandarina",
+  [1, 2, 3],
+  "ananas",
+  49,
+  649,
+  "resnje",
+];
