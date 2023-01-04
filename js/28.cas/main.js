@@ -122,12 +122,24 @@ let nizz = [
 ];
 function prebrojavanjeTipa(nizz) {
   let brojac1 = 0;
+  let brojac2 = 0;
+  let brojac3 = 0;
+  let brojac4 = 0;
   for (i = 0; i < nizz.length; i++) {
-    if (nizz[i] === String) {
+    if (typeof nizz[i] === "string") {
       brojac1++;
+    } else if (typeof nizz[i] === "number") {
+      brojac2++;
+    } else if (typeof nizz[i] === "boolean") {
+      brojac3++;
+    } else if (typeof nizz[i] === "object") {
+      brojac4++;
     }
   }
-  return brojac1;
+  return `Stringova ima ${brojac1}
+  Numbera ima ${brojac2}
+  Boolean ima ${brojac3}
+  Nizova ima ${brojac4}`;
 }
 console.log(prebrojavanjeTipa(nizz));
 
