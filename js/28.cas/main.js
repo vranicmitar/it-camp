@@ -109,7 +109,7 @@ console.log(subota); // nam vraca zapravo izbrisani element
 // Iz adtog niza ispisati koliko elemenata niza ke tipa string koliko tipa number koliko boolean
 // koliko elementa ima niz
 
-const nizz = [
+let nizz = [
   "jagoda",
   25,
   true,
@@ -120,3 +120,42 @@ const nizz = [
   649,
   "resnje",
 ];
+function prebrojavanjeTipa(nizz) {
+  let brojac1 = 0;
+  for (i = 0; i < nizz.length; i++) {
+    if (nizz[i] === String) {
+      brojac1++;
+    }
+  }
+  return brojac1;
+}
+console.log(prebrojavanjeTipa(nizz));
+
+// // JavaScript program to count number of data types in an array
+// let countDtypes = (arr) => {
+//   return arr.reduce((acc, curr) => {
+//     // Check if the acc contains the type or not
+//     if (acc[typeof curr]) {
+//       // Increase the type with one
+//       acc[typeof curr]++;
+//     } else {
+//       /* If acc not contains the type
+//                 then initialize the type with one */
+//       acc[typeof curr] = 1;
+//     }
+//     return acc;
+//   }, {}); // Initialize with an empty array
+// };
+
+// let arr = [
+//   "jagoda",
+//   25,
+//   true,
+//   "mandarina",
+//   [1, 2, 3],
+//   "ananas",
+//   49,
+//   649,
+//   "resnje",
+// ];
+// console.log(countDtypes(arr));
