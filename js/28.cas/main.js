@@ -143,7 +143,30 @@ function prebrojavanjeTipa(nizz) {
 }
 console.log(prebrojavanjeTipa(nizz));
 
-// // JavaScript program to count number of data types in an array
+// 2.nacin
+
+function types(nizz) {
+  let stringTip = 0;
+  let numberTip = 0;
+  let booleanTip = 0;
+  let nizTip = 0;
+  for (item of nizz) {
+    // novi zapis for petlje koji se odnosi na sve iterirajuce objekre
+    if (typeof item === "string") {
+      stringTip++;
+    } else if (typeof item === "number") {
+      numberTip++;
+    } else if (typeof item === "boolean") {
+      booleanTip++;
+    } else if (item instanceof Array) {
+      nizTip++;
+    }
+  }
+  return `U datom nizu su se nasla : \n ${stringTip} stringova, \n ${numberTip} brojeva, \n ${booleanTip} booleana i \n ${nizTip} niz`;
+}
+console.log(types(nizz));
+
+// // // JavaScript program to count number of data types in an array
 // let countDtypes = (arr) => {
 //   return arr.reduce((acc, curr) => {
 //     // Check if the acc contains the type or not
