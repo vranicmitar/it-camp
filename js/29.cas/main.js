@@ -45,7 +45,7 @@ function imena(niz) {
 
 console.log(imena(grupa));
 
-// 2.
+// 2.  NEPARNI broj
 
 function napravi(nizz) {
   let noviniz = [];
