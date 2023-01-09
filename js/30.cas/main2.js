@@ -37,24 +37,36 @@ console.log(brojevi2);
 //   return a - b;
 // }
 
-brojevi2.sort(function (a, b) {
-  return a - b;
-});
-console.log(brojevi2);
+// brojevi2.sort(function (a, b) {
+//   return a - b;
+// });
+// console.log(brojevi2);
 
-brojevi.sort((a, b) => a - b);
-console.log(brojevi);
+// brojevi.sort((a, b) => a - b);
+// console.log(brojevi);
 
-brojevi.sort((a, b) => b - a);
-console.log(brojevi);
+// brojevi.sort((a, b) => b - a);
+// console.log(brojevi);
 
-// Ako zelimo da nas niz sortira brojeve random.
-brojevi.sort(() => 0.5 - Math.random());
-console.log(brojevi);
+// // Ako zelimo da nas niz sortira brojeve random.
+// brojevi.sort(() => 0.5 - Math.random());
+// console.log(brojevi);
 
 // Za dati niz izvrsiti:
 // Sortiranje niza od najveceg ka najmanjem broju,
 // Sortiranje niza od najmanjeg ka najvecem broju,
 // Napraviti funkciju koja vraca najveci element niza,
 // Napraviti funkciju koja vraca najmanji element niza (na 2 nacina).
-// const niz = [-5, 6, 10, 45, 99, -44];
+const niz = [-5, 6, 10, 45, 99, -44];
+// 1
+niz.sort((a, b) => b - a);
+console.log(niz);
+// 2
+niz.sort((a, b) => a - b);
+console.log(niz);
+// 3
+niz.sort((a, b) => b - a);
+console.log(niz[0]);
+// 4
+niz.sort((a, b) => a - b);
+console.log(niz[0]);
