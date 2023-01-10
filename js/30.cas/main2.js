@@ -70,3 +70,30 @@ console.log(niz[0]);
 // 4
 niz.sort((a, b) => a - b);
 console.log(niz[0]);
+
+// 3 nacina za izdvajanje najveceg elementa -->
+
+// I nacin
+function max(niz) {
+  niz.sort((a, b) => b - a);
+  return niz[0];
+}
+console.log(max(niz));
+
+// II nacin
+
+Math.max(niz);
+console.log(Math.max.apply(null, niz)); // apply uzima null vrednost ako nema objekata ako ima koristi se object
+
+// III nacin
+
+function maxx(niz) {
+  let max = niz[0]; // -Infinity moze (Number.NEGATIVE_INFINITY)
+  for (i of niz) {
+    if (i > max) {
+      max = i;
+    }
+  }
+  return max;
+}
+console.log(maxx(niz));
