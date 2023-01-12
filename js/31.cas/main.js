@@ -61,3 +61,23 @@ function vrati(niz, n) {
 console.log(vrati([5, 6, 7], 2)); // vraca 5 i 6
 console.log(vrati([5, 6, 7])); // vraca prvi element
 console.log(vrati([5, 6, 7], 2700)); // vraca ceo niz
+
+// 1. Write a simple JavaScript program to join all elements of the following array into a string where is * between elements.
+const nizz = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(nizz.join("*"));
+
+// 2. Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8
+
+function niz2(broj) {
+  let brojj = broj.toString();
+  let novibroj = "";
+  for (i = 0; i < brojj.length; i++) {
+    if (brojj[i] % 2 === 0 && brojj[i + 1] % 2 === 0) {
+      novibroj += brojj[i] + "-";
+    } else {
+      novibroj += brojj[i];
+    }
+  }
+  return novibroj;
+}
+console.log(niz2(025468));
