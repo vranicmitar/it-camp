@@ -53,4 +53,32 @@ console.log(niz4);
 
 const brojevi = [-5, 4, 3, 10, 14, -5];
 
-// DOMACI -----> Napraviti novi niz koji ce sve negativne brojeve pomnoziti sa (-1) a pozitivne kvadrirati.
+// Domaci:
+// 1. Pomocu map() metode napraviti novi niz stringova ciji ce elementi da budu
+// ispisani velikim slovima.
+
+const niz5 = niz.map((student) => student.toUpperCase());
+console.log(niz5);
+
+// 2. Napraviti novi niz koji sadrzi kvadrate elemenata postojeceg niza:
+
+const niz6 = brojevi.map((kvadrat) => kvadrat ** 2);
+console.log(niz6);
+
+// 3. Napraviti novi niz koji sadrzi kvadratne korene elemenata postojeceg niza.
+
+const niz7 = brojevi.map((koren) => Math.sqrt(koren));
+console.log(niz7);
+
+// 4.
+// const brojevi = [-5, 4, 3, 10, 14, -5];
+// Napraviti novi niz koji ce sve negativne brojeve pomnoziti sa (-1), a pozitivne kvadrirati.
+
+const niz8 = brojevi.map(function (broj) {
+  if (broj < 0) {
+    return broj * -1;
+  } else {
+    return broj ** 2;
+  }
+});
+console.log(niz8);
