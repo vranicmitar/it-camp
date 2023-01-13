@@ -3,22 +3,22 @@
 
 const recenica = "Danas smo podelili sertifikate za HTML,CSS i JS";
 
-let recenica2 = recenica.replace("Danas","Juce");
+let recenica2 = recenica.replace("Danas", "Juce");
 
 console.log(recenica2);
 // Za promenu svih pronalazenja datog stringa cemo koristiti Regular Expressions:
 // 1. g (global)
 
-recenica2 = recenica.replace(/s/g,"t");
+recenica2 = recenica.replace(/s/g, "t");
 console.log(recenica2);
 
 // 2. i (insensitive)
 
-recenica2 = recenica.replace(/s/i,"A");
+recenica2 = recenica.replace(/s/i, "A");
 console.log(recenica2);
 
 // Koriscenje (g) i (i);
-recenica2 = recenica.replace(/s/gi,"A");
+recenica2 = recenica.replace(/s/gi, "A");
 console.log(recenica2);
 
 // toUpperCase() metoda za pretvaranje celog stirnga u velika slova.
@@ -33,47 +33,51 @@ console.log(recenica.toLowerCase());
 
 let a = "Danas je 16. cas JS.";
 let b = "Bice JS i preko 50 csaova.";
-let c = a +" "+ b; // losa praxa bez koriscenja concat metode
-console.log(c); 
+let c = a + " " + b; // losa praxa bez koriscenja concat metode
+console.log(c);
 
 c = a.concat(b);
-console.log(c); 
+console.log(c);
 
-c = a.concat(" ", b , "\nNakon toga cemo raditi react biblioteku.");
+c = a.concat(" ", b, "\nNakon toga cemo raditi react biblioteku.");
 console.log(c);
 
 // NAPOMENA --> Sve string metode prave novu promenljivu (jer su stringovi immutable vrednosti).
 
 // Napraviti funkciju koja kod stringa koji pred. argument f-je ispituje sledece:
 // - ako dati string ima vecu duzinu od 9:
-   // - pravi novi string koji ce biti isecak od pola do kraja originalnog stringa.
-   // - nakon toga menjamo mala slova a sa B i  funkcija ce vratiti novi string koji je sastavljen od "Ovo je novodobijena recenica," i poslednjeg izmenjenog isecka.
+// - pravi novi string koji ce biti isecak od pola do kraja originalnog stringa.
+// - nakon toga menjamo mala slova a sa B i  funkcija ce vratiti novi string koji je sastavljen od "Ovo je novodobijena recenica," i poslednjeg izmenjenog isecka.
 // - Ako string ima duzinu manju od 9 : f-ja treba vratiti poruku:
 // argument + {njena duzina} + "nedovoljno za dalje ispitivanje"
 
-const mojaFunkcija = function(recenica) {
-    if(recenica.length > 9) {
-        let polaDuzine;
-        // if (recenica.length % 2 === 0) {
-        //     polaDuzine = recenica.length / 2;
-        // } else if (recenica.length % 2 !== 0) {
-        //     polaDuzine = Math.ceil(recenica.length / 2)
-        // }
-        polaDuzine = recenica.length % 2 === 0 
-        ? recenica.length / 2 
+const mojaFunkcija = function (recenica) {
+  if (recenica.length > 9) {
+    let polaDuzine;
+    // if (recenica.length % 2 === 0) {
+    //     polaDuzine = recenica.length / 2;
+    // } else if (recenica.length % 2 !== 0) {
+    //     polaDuzine = Math.ceil(recenica.length / 2)
+    // }
+    polaDuzine =
+      recenica.length % 2 === 0
+        ? recenica.length / 2
         : Math.ceil(recenica.length / 2);
-        const isecak = recenica.slice(polaDuzine, recenica.length);
-        const novarecenica = isecak.replace(/a/g, "B");
-        const konacno = "Ovo je novodobijena recenica,".concat(novarecenica);
-        return konacno;
-    } else {
-        const recenica2 = recenica.concat(recenica.length, "nedovoljno za dalje ispitivanje.");
-    } return recenica2;
-}
+    const isecak = recenica.slice(polaDuzine, recenica.length);
+    const novarecenica = isecak.replace(/a/g, "B");
+    const konacno = "Ovo je novodobijena recenica,".concat(novarecenica);
+    return konacno;
+  } else {
+    const recenica2 = recenica.concat(
+      recenica.length,
+      "nedovoljno za dalje ispitivanje."
+    );
+  }
+  return recenica2;
+};
 
 console.log(mojaFunkcija("Kraj casa"));
 console.log(mojaFunkcija("Kraj 2 casa rada sa stringovima"));
-
 
 // Domaci zadatak.
 // Napraviti funkciju koja trazi od korisnika da unese neku recenicu, zatim funkcija vraca,
@@ -92,8 +96,8 @@ console.log(mojaFunkcija("Kraj 2 casa rada sa stringovima"));
 //     let nova1 = recenica.toLocaleUpperCase();
 //     let nova2 = recenica.toLocaleLowerCase();
 
-//     polaDuzine = recenica.length % 2 === 0 
-//         ? recenica.length / 2 
+//     polaDuzine = recenica.length % 2 === 0
+//         ? recenica.length / 2
 //         : Math.ceil(recenica.length / 2);
 //     let isecak1 = recenica.substr(0, polaDuzine).toUpperCase();
 //     let isecak2 = recenica.substr(polaDuzine, duzina).toLowerCase();
@@ -107,29 +111,41 @@ console.log(mojaFunkcija("Kraj 2 casa rada sa stringovima"));
 // Domaci --->
 
 const domaci = () => {
-    const recenica = prompt("Unesi recenicu: ");
-    let duzina = recenica.length;
-    let polaDuzine;
+  const recenica = prompt("Unesi recenicu: ");
+  let duzina = recenica.length;
+  let polaDuzine;
 
-    // if(duzina % 2 === 0) {
-    //     polaDuzine = duzina / 2;
-    // } else {
-    //     polaDuzine = Math.round(duzina / 2);
-    // }
+  // if(duzina % 2 === 0) {
+  //     polaDuzine = duzina / 2;
+  // } else {
+  //     polaDuzine = Math.round(duzina / 2);
+  // }
 
-    polaDuzine = duzina % 2 === 0 ? polaDuzine = duzina / 2 : Math.round(duzina / 2);
-    const prva = recenica.toUpperCase();
-    const druga = recenica.toLowerCase();
+  polaDuzine =
+    duzina % 2 === 0 ? (polaDuzine = duzina / 2) : Math.round(duzina / 2);
+  const prva = recenica.toUpperCase();
+  const druga = recenica.toLowerCase();
 
-    const prvaPol = recenica.slice(0, polaDuzine).toUpperCase();
-    const drugaPol = recenica.substring(polaDuzine,duzina).toLowerCase();
-    const treca = prvaPol.concat(drugaPol);
+  const prvaPol = recenica.slice(0, polaDuzine).toUpperCase();
+  const drugaPol = recenica.substring(polaDuzine, duzina).toLowerCase();
+  const treca = prvaPol.concat(drugaPol);
 
-    const cetvrta = recenica.replace(/skola/gi, "fakultet");
-    const  peta = recenica.substr(0,10);
-    const  sesta = recenica.slice(-10);
-    return (prva.concat("\n", druga, "\n", treca, "\n", cetvrta, "\n", peta, "\n", sesta));
-}
-console.log(domaci());
+  const cetvrta = recenica.replace(/skola/gi, "fakultet");
+  const peta = recenica.substr(0, 10);
+  const sesta = recenica.slice(-10);
+  return prva.concat(
+    "\n",
+    druga,
+    "\n",
+    treca,
+    "\n",
+    cetvrta,
+    "\n",
+    peta,
+    "\n",
+    sesta
+  );
+};
+console.log(domaci("Ja sam isao u skolu neko vreme a sada radim"));
 
 // Izostavljajuci drugi argument kod slice() metode se uzima isecak do kraja stringa.
