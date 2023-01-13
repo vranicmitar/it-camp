@@ -75,10 +75,7 @@ console.log(niz7);
 // Napraviti novi niz koji ce sve negativne brojeve pomnoziti sa (-1), a pozitivne kvadrirati.
 
 const niz8 = brojevi.map(function (broj) {
-  if (broj < 0) {
-    return broj * -1;
-  } else {
-    return broj ** 2;
-  }
+  const izracunaj = broj < 0 ? broj * -1 : broj ** 2;
+  return izracunaj;
 });
 console.log(niz8);
