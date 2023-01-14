@@ -1,7 +1,7 @@
 // Java Script Array Iteration //
 
 // Array Iteration metode prolaze kroz svaki element niza.
-
+3;
 // forEach() metoda poziva call back fukciju za svaki element niza. (klasicna for petlja ali za nizove)
 
 const niz = ["tarik", "hamed", "emin", "bakir", "dzenan"];
@@ -79,3 +79,24 @@ const niz8 = brojevi.map(function (broj) {
   return izracunaj;
 });
 console.log(niz8);
+
+// Napraviti funkciju koja pravi novi niz gde ce se pozitivni elementi kvadrirati a negativni pomnoziti sa (-1)
+//  a ako se neki element pojavljuje vise puta u originlalnom nizu na svako sledece pojavljivanje ce se u novom nizu dodati element
+// "ovo je bio duplikat"
+
+const second = (arr) => {
+  const newArr = [];
+  for (i = 0; i < arr.length; i++) {
+    if (arr.slice(0, i).includes(arr[i])) {
+      newArr.push("ovde je bio duplikat");
+    } else if (i < 0) {
+      newArr.push(-arr[i]);
+    } else {
+      newArr.push(arr[i] ** 2);
+    }
+  }
+  return newArr;
+};
+
+console.log(second([5, 4, -9, 0, -6, 5, 4]));
+
