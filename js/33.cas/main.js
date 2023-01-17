@@ -46,3 +46,18 @@ const prvi = DATA1.concat(DATA2);
 const drugi = prvi.filter((element) => element % 2 === 0);
 drugi.unshift(10, 20);
 console.log(`Prvi niz je ${prvi} ,\n a drugi je ${drugi}`);
+
+// drugi nacin
+
+const task = (arr1, arr2) => {
+  const pomocni = arr1.concat(arr2);
+  const pomocni2 = [];
+  for (broj of pomocni) {
+    if (broj % 2 === 0) {
+      pomocni2.push(broj);
+    }
+  }
+  pomocni2.unshift(10, 20);
+  return [pomocni, pomocni2];
+};
+console.log(task(DATA1, DATA2));
