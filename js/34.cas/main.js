@@ -113,6 +113,6 @@ const saberi2 = (arr, arr2) => {
 
 console.log(saberi2([1, 0, 2, 3, 4], [3, 5, 6, 7, 8, 13]));
 
-
 // duplirati parne sabrati parne (filter,map,reduce)
 // izracunaj sumu parnih brojeva iz niza od 10 elemenata;
+
