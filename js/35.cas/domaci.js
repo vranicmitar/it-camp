@@ -16,21 +16,30 @@ console.log(novinizzz2);
 // 3. Write a JavaScript program to find the most frequent item of an array.
 // Sample array :
 const arr1 = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
-
-// 4. Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
-let element;
-let brojPojavljivanja = 1;
-let brojac = 0;
-for (let i = 0; i < arr1.length; i++) {
-  for (let j = i; j < arr1.length; j++) {
-    if (arr1[i] === arr1[j]) {
-      brojac++;
-      if (brojPojavljivanja < brojac) {
-        brojPojavljivanja = brojac;
-        element = arr1[i];
-      }
+function najvisePronadjen(arr1) {
+  const newArr1 = [];
+  arr1.map((element) => {
+    let brojac = 0;
+    for (let i = 0; i < arr1.length; i++) {
+      arr1[i] === element ? brojac++ : brojac;
     }
-  }
-  brojac = 0;
+    newArr1.push(brojac);
+  });
+  const najvisePronadjen = Math.max.apply(null, newArr1);
+  const indexNajvisePronadjenog = newArr1.indexOf(najvisePronadjen);
+  return `Najvise ima karaktera ${arr1[indexNajvisePronadjenog]}`;
 }
-console.log(`${element} se pojavljuje ${brojPojavljivanja} puta.`);
+
+console.log(najvisePronadjen(arr1));
+// 4. Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
+function zameni(recenica) {
+  let novarecenica = "";
+  for (let i = 0; i < recenica.length; i++) {
+    const zameni2 =
+      recenica[i] === recenica[i].toUpperCase()
+        ? (novarecenica += recenica[i].toLowerCase())
+        : (novarecenica += recenica[i].toUpperCase());
+  }
+  return novarecenica;
+}
+console.log(zameni("The Quick Brown Fox"));
