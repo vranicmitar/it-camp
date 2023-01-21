@@ -100,3 +100,5 @@ const second = (arr) => {
 
 console.log(second([5, 4, -9, 0, -6, 5, 4]));
 
+// duplikati
+
