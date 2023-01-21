@@ -14,18 +14,17 @@ console.log(suma);
 // Pronadji najveci palindrom napravljen od prozivoda dav trocifrena broja.
 
 const isPalindrom = (broj) => {
-  let noviBroj = broj.toString();
-  let newBrojstr = "";
-  for (i = noviBroj.length - 1; i >= 0; i--) {
-    newBrojstr += noviBroj[i];
+  const strBroj = broj.toString();
+  let newStrBroj = "";
+  for (let i = strBroj.length - 1; i >= 0; i--) {
+    newStrBroj += strBroj[i];
   }
-  if (noviBroj === newBrojstr) {
+  if (strBroj === newStrBroj) {
     return true;
   } else {
     return false;
   }
 };
-console.log(isPalindrom(45));
 
 const maxPalindrom = () => {
   const niz = [];
@@ -39,16 +38,3 @@ const maxPalindrom = () => {
   return Math.max.apply(null, niz);
 };
 console.log(maxPalindrom());
-
-// 2.nacin
-
-const maxPalindrom2 = () => {
-  for (i = 999; i > 99; i--) {
-    for (k = i; k > 99; k--) {
-      if (isPalindrom(i * k)) {
-        return i * k;
-      }
-    }
-  }
-};
-console.log(maxPalindrom2());
