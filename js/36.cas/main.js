@@ -80,6 +80,26 @@ console.log(nestoPojmaNemam);
 // };
 // console.log(nadjiDuplikate(["Miona", "Bakir", "Miona"]));
 
+const removeDuplicates = (arr) => {
+  const newArr = [];
+  for (let el of arr) {
+    if (
+      (typeof el === "string" &&
+        newArr.some((element) => element.toLowerCase() === el.toLowerCase())) ||
+      newArr.some((element) => element === el)
+    ) {
+      continue;
+    } else {
+      newArr.push(el);
+    }
+  }
+  return newArr;
+};
+console.log(removeDuplicates([1, 1, 3, 4, 5, 6, 7, 3]));
+console.log(removeDuplicates(["Alen", "alen", "aleN", "Mitar", "miTar"]));
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 let color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 
 let o = ["st", "nd", "rd", "th"];

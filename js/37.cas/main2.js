@@ -14,7 +14,7 @@ const ispisivanje = (n) => {
 };
 ispisivanje(10);
 
-// falt() metoda se koristi kad unutar niza imamo koji je niz i zelimo da sve podelemente izvucemo na nacin da oni pred. elemente gl. niza .
+// flat() metoda se koristi kad unutar niza imamo koji je niz i zelimo da sve podelemente izvucemo na nacin da oni pred. elemente gl. niza .
 
 const niz = [
   ["jabuka", "ananas", "jagoda", "kruska"],
@@ -34,6 +34,16 @@ let a = [
 ];
 
 // zadatak 10 (nizovi)
+// // Write a JavaScript program which prints the elements of the following array. Go to the editor
+// Note : Use nested for loops.
+// Sample array 
+// // Sample Output :
+// "row 0"
+// " 1"
+// " 2"
+// " 1"
+// " 24"
+// "row 1"
 const rasporedi = (arr) => {
   let outputStr = "";
   for (i = 0; i < arr.length; i++) {

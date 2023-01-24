@@ -2,15 +2,15 @@
 // Dok ako se jagoda nalazi unutar niza vratiti poziciju gde se ona nalazi.
 
 const array = () => {
-  const str = prompt("Unesite potrebno voce:  ");
+  const str = prompt("Unesite potrebno voce: ");
   const arr = str.split(",");
   if (arr.some((el) => el === "jagoda")) {
-    return `Jagoda se nalazi na ${arr.indexOf("jagoda" + 1)}`;
+    return `Jagoda se nalazi na ${arr.indexOf("jagoda") + 1} mestu.`;
   } else {
     arr.sort();
     arr.unshift(10);
     arr.push(100);
+    return arr;
   }
-  return arr;
 };
 console.log(array());
