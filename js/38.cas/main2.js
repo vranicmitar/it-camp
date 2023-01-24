@@ -49,3 +49,16 @@ console.log(person2.fullName());
 // ** u nekom objektu this ukazuje na taj objeakt
 // ** U Global Scope this ukazzuje na global obejct
 
+// Zadatak
+
+const vrati = (rec) => {
+  const niz = [];
+  for (i = 0; i < rec.length; i++) {
+    for (k = i; k < rec.length; k++) {
+      niz.push(rec.slice(i, k + 1));
+    }
+  }
+  return niz
+};
+
+cosno
