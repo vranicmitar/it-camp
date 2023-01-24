@@ -25,13 +25,6 @@ const niz = [
 const niz2 = niz.flat();
 console.log(niz2);
 
-let a = [
-  [1, 2, 1, 24],
-  [8, 11, 9, 4],
-  [7, 0, 7, 27],
-  [7, 4, 28, 14],
-  [3, 10, 26, 7],
-];
 
 // zadatak 10 (nizovi)
 // // Write a JavaScript program which prints the elements of the following array. Go to the editor
@@ -44,6 +37,15 @@ let a = [
 // " 1"
 // " 24"
 // "row 1"
+
+let a = [
+  [1, 2, 1, 24],
+  [8, 11, 9, 4],
+  [7, 0, 7, 27],
+  [7, 4, 28, 14],
+  [3, 10, 26, 7],
+];
+
 const rasporedi = (arr) => {
   let outputStr = "";
   for (i = 0; i < arr.length; i++) {
