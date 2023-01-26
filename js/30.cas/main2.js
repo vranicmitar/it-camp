@@ -1,7 +1,6 @@
 // Sortiranje nizova //
 
 const voce = ["jagoda", "banana", "kruska", "ananas", "jabuka", "kivi"];
-
 // sort() metoda sortira niz abecedno.
 
 // voce.sort();

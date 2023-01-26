@@ -68,19 +68,19 @@ console.log(nizz.join("*"));
 
 // 2. Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8
 
-function niz2(broj) {
-  let brojj = broj.toString(); // ne treba pretvarati u string (ne cita nulu!!!)
-  let novibroj = "";
-  for (i = 0; i < brojj.length; i++) {
-    if (brojj[i] % 2 === 0 && brojj[i + 1] % 2 === 0) {
-      novibroj += brojj[i] + "-";
-    } else {
-      novibroj += brojj[i];
-    }
-  }
-  return novibroj;
-}
-console.log(niz2(025468));
+// function niz2(broj) {
+//   let brojj = broj.toString(); // ne treba pretvarati u string (ne cita nulu!!!)
+//   let novibroj = "";
+//   for (i = 0; i < brojj.length; i++) {
+//     if (brojj[i] % 2 === 0 && brojj[i + 1] % 2 === 0) {
+//       novibroj += brojj[i] + "-";
+//     } else {
+//       novibroj += brojj[i];
+//     }
+//   }
+//   return novibroj;
+// }
+// console.log(niz2(025468));
 
 // 2.nacin -->
 

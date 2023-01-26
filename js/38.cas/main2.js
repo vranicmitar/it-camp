@@ -58,7 +58,26 @@ const vrati = (rec) => {
       niz.push(rec.slice(i, k + 1));
     }
   }
-  return niz
+  return niz;
 };
 
-cosno
+console.log(vrati("dog"));
+
+// Domaci:
+// Napraviti objekat student koji ce da ima vrednosti (po zelji), svojstava:
+// ime, prezime, broj indeksa, ocene (niz svih ocena koje student ima u
+// trenutnoj godini), prosekOcena (funckija koja na osnovu ocene vraca prosek
+// datih ocena).
+
+const student = {
+  ime: "Mitar",
+  prezime: "Vranic",
+  brojIndexa: "I123/2023",
+  ocene: [6, 7, 8, 9, 10],
+  prosekOcena: function () {
+    const prosek = this.ocene.reduce((prev, cur) => prev + cur);
+    const prosek2 = (prosek / this.ocene.length).toFixed(2);
+    return `Prosek svih ocena je ${prosek2}`;
+  },
+};
+console.log(student.prosekOcena());
