@@ -36,3 +36,105 @@ const zadatak = (recenica) => {
   );
 };
 console.log(zadatak("Ja sam isao u skola neko vreme a sada radim"));
+
+// Zadatak 1
+// Napisati program kojim se unosi niz od N elemenata i potom ispisuju elementi niza.
+niz = [0, 1, 2, 3, 4, 5, 6];
+console.log(niz);
+
+// Zadatak 3
+// Formira se niz od N članova. Izračunati zbir elemenata niza.
+
+function saberiElemente(niz) {
+  const saberi2 = niz.reduce((prev, cur) => prev + cur);
+  return saberi2;
+}
+console.log(saberiElemente([1, 2, 3, 4, 5]));
+
+// Zadatak 4
+// Izračunati prosek (aritmetičku sredinu) svih elemenata niza od N numeričkih elemenata.
+
+function aritmetickaSredina(niz) {
+  const prosek = niz.reduce((prev, cur) => prev + cur);
+  const prosek2 = (prosek / niz.length).toFixed(2);
+  return prosek2;
+}
+console.log(aritmetickaSredina([1, 2, 3, 4, 5]));
+
+// Zadatak A.1
+// Napisati program kojim se pronalazi broj nula u unetom nizu brojeva.
+
+const prebrojNule = (niz) => {
+  let brojac = 0;
+  for (i of niz) {
+    if (i === 0) {
+      brojac++;
+    }
+  }
+  return brojac;
+};
+console.log(prebrojNule([0, 1, 0, 1, 1, 0, 1, 0]));
+
+// Zadatak A.3
+// Izračunati zbir elemenata niza koji su veći od svog indeksa.
+
+const zbir = (niz) => {
+  const izracunaj = niz.filter((el, index) => el > index);
+  const izracunaj2 = izracunaj.reduce((prev, cur) => prev + cur);
+  return izracunaj2;
+};
+console.log(zbir([0, 1, 5, 10, 15, 20]));
+
+// Zadatak A.4
+// Kreira se niz od N članova i unosi broj X. Treba ispisati indekse onih članova niza koji su jednaki broju X.
+
+const ispisi = (niz, x) => {
+  const noviniz = niz.filter((el, index) => index === x);
+  return noviniz;
+};
+console.log(ispisi([0, 1, 2, 3], 3));
+
+// Zadatak A.5
+// Prebrojati koliko ima negativnih brojeva u nizu, u intervalu od indeksa I1 do indeksa I2.
+
+////////////
+
+// Zadatak A.6
+// U unetom nizu celih brojeva, treba naći broj parnih i broj neparnih elemenata niza.
+
+const nadji = (niz) => {
+  let brojac1 = 0;
+  let brojac2 = 0;
+  for (i of niz) {
+    if (i % 2 === 0) {
+      brojac1++;
+    } else {
+      brojac2++;
+    }
+  }
+  return `Parnih ima ${brojac1} a neparnih ${brojac2}.`;
+};
+console.log(nadji([1, 3, 5, 2, 4, 6, 8]));
+
+// Zadatak A.7
+// Proveriti da li u nizu ima više pozitivnih ili negativnih brojeva.
+
+const razlika = (niz) => {
+  let brojac1 = 0;
+  let brojac2 = 0;
+  for (i of niz) {
+    if (i > 0) {
+      brojac1++;
+    } else if (i < 0) {
+      brojac2++;
+    } else if (brojac1 > brojac2) {
+      return `Ima vise pozitivnih`;
+    } else if (brojac1 < brojac2) {
+      return `Ima vise negativnih`;
+    } else {
+      return `Ima ih podjednako`;
+    }
+  }
+};
+console.log(razlika([-5, -6, 1, 2, 3]));
+

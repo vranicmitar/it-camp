@@ -95,7 +95,12 @@ const totalKilometers = (arr) => {
 console.log(totalKilometers(miles));
 
 //
-
+// 5. There are two arrays with individual values, write a JavaScript program to compute the sum of each individual index value from the given arrays. Go to the editor
+// Sample array :
+// array1 = [1, 0, 2, 3, 4];
+// array2 = [3, 5, 6, 7, 8, 13];
+// // Expected Output :
+// [4, 5, 8, 10, 12, 13]
 const saberi2 = (arr, arr2) => {
   const length = arr.length > arr2 ? arr.length : arr2.length;
   const newArr = [];
