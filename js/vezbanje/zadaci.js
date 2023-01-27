@@ -122,19 +122,36 @@ console.log(nadji([1, 3, 5, 2, 4, 6, 8]));
 const razlika = (niz) => {
   let brojac1 = 0;
   let brojac2 = 0;
-  for (i of niz) {
-    if (i > 0) {
+  for (i = 0; i < niz.length; i++) {
+    if (niz[i] > 0) {
       brojac1++;
-    } else if (i < 0) {
-      brojac2++;
-    } else if (brojac1 > brojac2) {
-      return `Ima vise pozitivnih`;
-    } else if (brojac1 < brojac2) {
-      return `Ima vise negativnih`;
     } else {
-      return `Ima ih podjednako`;
+      brojac2++;
     }
   }
+  const ter = brojac1 > brojac2 ? `Ima vise pozitivnih` : `Ima vise negativnih`;
+  return ter;
 };
-console.log(razlika([-5, -6, 1, 2, 3]));
+console.log(razlika([-5, -6, -3, 10, -5, -6]));
 
+// Zadatak A.8
+// Izračunati aritmetičku sredinu svih pozitivnih elemenata niza celih brojeva.
+
+function aritmetic(arr) {
+  const total = arr.filter((el) => el > 0);
+  const total2 = total.reduce((prev, cur) => prev + cur);
+  const total3 = (total2 / total.length).toFixed(2);
+  return total3;
+}
+console.log(aritmetic([3, 4, -5, -6, -5, 1]));
+
+// Zadatak A.9
+// Izračunati proizvod svih elemenata koji se nalaze na parnim pozicijama (indeksima).
+
+const parni = (niz) => {
+  const novi = niz
+    .filter((el, index) => index % 2 === 0)
+    .reduce((prev, cur) => prev * cur);
+  return novi;
+};
+console.log(parni([1, 2, 3, 4]));
