@@ -159,6 +159,5 @@ console.log(parni([1, 2, 3, 4]));
 // Zadatak A.16
 // Proveriti da li među elementima niza nema duplikata.
 
-
 const remove = (arr) => [...new Set(arr)];
-console.log(remove([1, 2, 3, 3, 4, 4, 5, 5, 6]));
+console.log(remove([1, 2, 3, 3, 4, 4, 5, 5, 6])); // 1,2,3,4,5,6
