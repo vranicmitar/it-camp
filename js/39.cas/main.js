@@ -1,6 +1,6 @@
 // JSON - JavaScript Object Notation //
 
-// JSON je format za skladistenje i orenis podataka.
+// JSON je format za skladistenje i prenos podataka.
 // Najcesce se koristi kada se podaci salju sa servera ka WEB stranici.
 
 // JSON podaci su vrlo slicni JS objektu i oni se zapisuju:
