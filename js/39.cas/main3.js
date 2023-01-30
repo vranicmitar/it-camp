@@ -102,22 +102,27 @@ const radnik = {
 console.log(radnik.fullname());
 console.log(radnik.adresa.getAdress());
 // 3. Zadatak
-// const automobil = {
-//     marka: "Audi",
-//     model: "Q7",
-//     boja: "Bela",
-//     pogon: "quattro",
-//     menjac: "Automatik",
-//     km:240000,
-//     vlasnik:[062321552,063930630],
-//     garaza:{
-//         parking:"JKP Servis",
-//         vikend:"od 17 free",
-//         satnaKarta: "50",
-//         dnevnaKarta: "200",
-//         mesecnaKarta: "2000",
-//         platiZa: function(od, do) {
-//           const prviO
-// }
-//     }
-// }
+const automobil = {
+  marka: "Audi",
+  model: "Q7",
+  boja: "Bela",
+  pogon: "quattro",
+  menjac: "Automatik",
+  km: 240000,
+  vlasnik: ["062321552", "063930630"],
+  garaza: {
+    parking: "JKP Servis",
+    vikend: "od 17 free",
+    satnaKarta: "50",
+    dnevnaKarta: "200",
+    mesecnaKarta: "2000",
+    platiZa: function (odPrvog, doPoslednjeg) {
+      const prvi = odPrvog.getDate();
+      const poslednji = doPoslednjeg.getDate();
+      const ukupno = poslednji - prvi;
+      return `Cena parkinga je ${ukupno * this.dnevnaKarta} `;
+    },
+  },
+};
+
+console.log(automobil.garaza.platiZa());
