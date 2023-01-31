@@ -47,4 +47,3 @@ console.log(niz);
 // Dodavanje novih svojstava :
 mitar.punoletnost = true;
 console.log(mitar);
-
