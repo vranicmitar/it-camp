@@ -161,3 +161,4 @@ console.log(parni([1, 2, 3, 4]));
 
 const remove = (arr) => [...new Set(arr)];
 console.log(remove([1, 2, 3, 3, 4, 4, 5, 5, 6])); // 1,2,3,4,5,6
+
