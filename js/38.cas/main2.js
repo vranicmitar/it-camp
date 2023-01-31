@@ -16,7 +16,7 @@ console.log(person);
 // JedaN key:value par se zove porperty (svojstvo).
 
 // 1.objectName.propertyName    (person.firstName)
-// 2.objectName["propertyName"] (person[firstName])
+// 2.objectName["propertyName"] (person[`firstName`])
 
 console.log(person.firstName);
 console.log(person.adult);

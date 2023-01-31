@@ -72,9 +72,8 @@ const person = {
     return this.language;
   },
   setNickName: function () {
-    let prvi =
-      this.firstName[0].toUpperCase() + this.firstName[1].toLowerCase();
-    let drugi = this.lastName[0].toLowerCase() + this.lastName[1].toLowerCase();
+    let prvi = this.firstName[0].toUpperCase() + this.firstName[1];
+    let drugi = this.lastName[0].toLowerCase() + this.lastName[1];
     return prvi.concat(drugi);
   },
 };
@@ -101,7 +100,7 @@ const radnik = {
 
 console.log(radnik.fullname());
 console.log(radnik.adresa.getAdress());
-// 3. Zadatak
+// // 3. Zadatak
 const automobil = {
   marka: "Audi",
   model: "Q7",
