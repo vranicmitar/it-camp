@@ -40,3 +40,34 @@ console.log(p2);
 let copiedPerson = person;
 copiedPerson.firstName = "Jane";
 console.log(person);
+
+// nepromenjivost
+
+let myObj1 = {};
+
+Object.defineProperty(myObj1, "FAVORITE_NUMBER", {
+  value: 42,
+  writable: true,
+  configurable: true,
+  //   enumerable: true,
+});
+console.log(myObj1);
+
+// let myObj2 = {
+//   a: 2,
+// };
+// Object.preventExtensions(myObj2);
+// myObj2.b = 3;
+// console.log(myObj2.b);
+
+const iterable = "boo";
+for (i of iterable) {
+  console.log(i);
+}
+
+const student = {
+  registration: "123456",
+  name: "Sandeep",
+  age: 33,
+};
+Object.entries(student).forEach(([key, value]) => console.log(key, value));
