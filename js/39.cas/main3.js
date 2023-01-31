@@ -66,10 +66,11 @@ console.log(myCar);
 const person = {
   firstName: "Mitar",
   lastName: "Vranic",
-  language: "Engleski jezik",
+  language: [],
   setLanguage: function (jezik) {
-    this.language = jezik;
-    return this.language;
+    if (!this.language.includes(jezik)) {
+      this.language.push(jezik);
+    }
   },
   setNickName: function () {
     let prvi = this.firstName[0].toUpperCase() + this.firstName[1];
@@ -124,4 +125,36 @@ const automobil = {
   },
 };
 
-console.log(automobil.garaza.platiZa());
+console.log(
+  automobil.garaza.platiZa(new Date(2022, 10, 10), new Date(2022, 10, 15))
+);
+
+
+// const automobil = {
+//   marka: "Audi",
+//   model: "Q7",
+//   boja: "Bela",
+//   pogon: "quattro",
+//   menjac: "Automatik",
+//   km: 240000,
+//   vlasnik: ["062321552", "063930630"],
+//   garaza: {
+//     parking: "JKP Servis",
+//     vikend: "od 17 free",
+//     satnaKarta: "50",
+//     dnevnaKarta: "200",
+//     mesecnaKarta: "2000",
+//     platiZa: function (odPrvog, doPoslednjeg) {
+//       const prvi = odPrvog.getTime();
+//       const poslednji = doPoslednjeg.getTime();
+//       const razlika = Math.abs(poslednji - prvi);
+//       // 1000*60*60*24
+//       const brojDana = razlika / (1000 * 60 * 60 * 24);
+//       return `Cena parkinga je ${brojDana * this.dnevnaKarta} dinara`;
+//     },
+//   },
+// };
+
+// console.log(
+//   automobil.garaza.platiZa(new Date(2023, 0, 21), new Date(2023, 0, 26))
+// );
