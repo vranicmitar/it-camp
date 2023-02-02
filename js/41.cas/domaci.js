@@ -18,7 +18,24 @@ let library = [
   },
 ];
 console.log(library);
-let sortedProducts = library.sort((p1, p2) =>
-  p1.libraryID < p2.libraryID ? 1 : p1.libraryID > p2.libraryID ? -1 : 0
-);
-console.log(sortedProducts);
+// let sortedProducts = library.sort((p1, p2) =>
+//   p1.libraryID < p2.libraryID ? 1 : p1.libraryID > p2.libraryID ? -1 : 0
+// );
+// console.log(sortedProducts);
+
+// 1.nacin
+
+// 2.nacin
+
+const sort2 = (arr) => {
+  const newarr = arr.map((element) => element.title);
+  newarr.sort();
+  const finalArr = [];
+  for (i = 0; i < arr.length; i++) {
+    if (arr.find((el) => el.title === newarr[i])) {
+      finalArr.push(arr.find((el) => el.title === newarr[i]));
+    }
+  }
+  return finalArr;
+};
+console.log(sort2(library));
