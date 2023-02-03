@@ -51,7 +51,44 @@ console.log(poruka.apply(restoran2, ["Sarajevo", "BiH"]));
 const binFunc = poruka.bind(restoran1);
 console.log(binFunc("Novi Sad", `Srbija`));
 
+// Random zad:
+// Write a JavaScript function to retrieve all the values of an object's properties.
 
-// domaci
+const getValues = (obj) => {
+  const values = [];
+  for (let key in obj) {
+    values.push(obj[key]);
+  }
+  return values;
+};
 
-const getValues
+const obj = {
+  marka: "Audi",
+  model: "A6",
+};
+
+console.log(getValues(obj));
+// for (let x in obj) {
+//   console.log(x); kljucevi
+// }
+
+// Domaci:
+const automobil = {
+  marka: "Audi",
+  model: "Q7",
+  boja: "Bela",
+  pogon: "quattro",
+  menjac: "Automatik",
+  km: 240000,
+  vlasnik: ["062321552", "063930630"],
+  garaza: {
+    parking: "JKP Servis",
+    vikend: "od 17 free",
+    satnaKarta: 50,
+    dnevnaKarta: 200,
+    mesecnaKarta: 2000,
+  },
+};
+// Napraviti funkciju koja ce povecati vrednost satne, dnevne i mesecne karte za po 20%.
+// Za bilo koji objekat koji ima properties: satnaKarta, dnevnaKarta i mesecnaKarta.
+// Nakon toga je primeniti za automobil objekat i ispisati automobil nakon toga.

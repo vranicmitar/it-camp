@@ -23,7 +23,28 @@ console.log(library);
 // );
 // console.log(sortedProducts);
 
-// 1.nacin
+// 1. Nacin
+function sort() {
+  max = library[0].title.length;
+  for (i = 1; i < library.length; i++) {
+    if (library[i].title.length > max) {
+      max = library[i].title.length;
+    }
+  }
+  for (i = 0; i < library.length - 1; i++) {
+    for (j = i + 1; j < library.length; j++) {
+      for (k = 0; k < max; k++) {
+        if (library[i].title[k] > library[j].title[k + 1]) {
+          pom = library[i];
+          library[i] = library[j];
+          library[j] = pom;
+        }
+      }
+    }
+  }
+  console.log(library);
+}
+console.log(sort());
 
 // 2.nacin
 
