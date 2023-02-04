@@ -77,7 +77,7 @@ const student = {
   prosekOcena: function () {
     const prosek = this.ocene.reduce((prev, cur) => prev + cur);
     const prosek2 = (prosek / this.ocene.length).toFixed(2);
-    return `Prosek svih ocena je ${prosek2}`;-
+    return `Prosek svih ocena je ${prosek2}`
   },
 };
 console.log(student.prosekOcena());

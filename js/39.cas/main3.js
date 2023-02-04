@@ -20,7 +20,7 @@ const myCar = {
     serviser: "Pasovic",
   },
   udaran: true,
-};
+};  
 
 myCar.trenutnaBrzina = 0;
 myCar.maximalnaBrzina = 260;
@@ -128,7 +128,6 @@ const automobil = {
 console.log(
   automobil.garaza.platiZa(new Date(2022, 10, 10), new Date(2022, 10, 15))
 );
-
 
 // const automobil = {
 //   marka: "Audi",

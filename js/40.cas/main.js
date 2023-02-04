@@ -86,5 +86,3 @@ const godine1 = [
 ];
 const novegod = godine1.filter((el) => el.strarost > 17);
 console.log(novegod);
-
-

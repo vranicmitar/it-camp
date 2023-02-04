@@ -171,5 +171,3 @@ let b = [3, 1, 1, 2];
 
 // 38,23,23,52
 
-const a1 = a.reduce((prev, cur) => prev + cur);
-console.log(a1);
