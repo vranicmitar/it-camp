@@ -22,4 +22,10 @@ const automobil = {
 // (50*20/100)
 // + 50
 
-
+function povecajZa20() {
+  this.satnaKarta *= 1.2;
+  this.dnevnaKarta *= 1.2;
+  this.mesecnaKarta *= 1.2;
+}
+povecajZa20.call(automobil.garaza);
+console.log(automobil);
