@@ -88,7 +88,7 @@ const grupa = [
 
 function nadji(niz) {
   const niz2 = niz.filter(
-    (el) => el.bojaOciju === "braon" && el.polozenC === true
+    (el) => el.bojaOciju === "braon" && el.polozenC === false
   );
   return niz2;
 }
