@@ -13,12 +13,6 @@ const movies2 = movies.map((element) => {
     budget: element.budget,
   };
 });
-console.log(movies2);  // vraca title i buget a rating se brise
+console.log(movies2); // vraca title i buget a rating se brise
 
 // Domaci
-
-const grupa = [
-    {
-        firstName: 
-    }
-]

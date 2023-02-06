@@ -86,14 +86,13 @@ const grupa = [
   },
 ];
 
-function nadji(niz) {
+function bojaC(niz) {
   const niz2 = niz.filter(
-    (el) => el.bojaOciju === "braon" && el.polozenC === false
+    (el) => el.bojaOciju === `braon` && el.polozenC === false
   );
   return niz2;
 }
-console.log(nadji(grupa));
-
+console.log(bojaC(grupa));
 //  2. Zadatak
 //  The variable watchList holds an array of objects with information
 //  on several movies. Use reduce to find the average IMDB rating
@@ -223,3 +222,29 @@ const watchList = [
     Response: "True",
   },
 ];
+
+const wthls = (niz) => {
+  const niz2 = niz.filter((el) => el.Director === "Christopher Nolan");
+  const niz3 = niz2.map((el) => +el.imdbRating);
+  const niz4 = niz3.reduce((prev, cur) => prev + cur);
+  const niz5 = (niz4 / niz3.length).toFixed(2);
+  return niz5;
+};
+console.log(wthls(watchList));
+// const wthls2 = wthls.map((el) => Object.entries(el));
+
+// console.log(wthls2.flat());
+
+// const wthls3 = wthls2.flat();
+// console.log(wthls3.flat());
+
+// const wthls4 = (arr) => {
+//   let noviniz = [];
+//   for (i of arr) {
+//     if (typeof i === "number") {
+//       noviniz.push(i);
+//     }
+//   }
+//   return noviniz;
+// };
+// console.log(wthls4(wthls3));
