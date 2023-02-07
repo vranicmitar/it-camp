@@ -70,4 +70,5 @@ const student = {
   name: "Sandeep",
   age: 33,
 };
+console.log(student);
 Object.entries(student).forEach(([key, value]) => console.log(key, value));

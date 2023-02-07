@@ -231,20 +231,3 @@ const wthls = (niz) => {
   return niz5;
 };
 console.log(wthls(watchList));
-// const wthls2 = wthls.map((el) => Object.entries(el));
-
-// console.log(wthls2.flat());
-
-// const wthls3 = wthls2.flat();
-// console.log(wthls3.flat());
-
-// const wthls4 = (arr) => {
-//   let noviniz = [];
-//   for (i of arr) {
-//     if (typeof i === "number") {
-//       noviniz.push(i);
-//     }
-//   }
-//   return noviniz;
-// };
-// console.log(wthls4(wthls3));
