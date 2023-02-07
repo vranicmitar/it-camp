@@ -198,3 +198,4 @@ const vrati = (rec) => {
 console.log(vrati("dog"));
 
 // Vezbanje
+// .
