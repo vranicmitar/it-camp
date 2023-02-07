@@ -88,7 +88,7 @@ const grupa = [
 
 function bojaC(niz) {
   const niz2 = niz.filter(
-    (el) => el.bojaOciju === `braon` && el.polozenC === false
+    (el) => el.bojaOciju === `braon` && !el.polozenC
   );
   return niz2;
 }
@@ -228,6 +228,6 @@ const wthls = (niz) => {
   const niz3 = niz2.map((el) => +el.imdbRating);
   const niz4 = niz3.reduce((prev, cur) => prev + cur);
   const niz5 = (niz4 / niz3.length).toFixed(2);
-  return niz5;
+  return `Prosecna ocena filmova je ${niz5}.`;
 };
 console.log(wthls(watchList));

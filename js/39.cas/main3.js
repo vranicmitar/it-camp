@@ -157,3 +157,4 @@ console.log(
 // console.log(
 //   automobil.garaza.platiZa(new Date(2023, 0, 21), new Date(2023, 0, 26))
 // );
+
