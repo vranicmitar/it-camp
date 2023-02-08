@@ -46,15 +46,17 @@ const contacts = [
   },
 ];
 
-// function lookUpProfile(arr, name, prop) {
-//   const element = arr.find((element) => {
-//     const keys = Object.keys(element);
-//     return element.firstName === name && keys.includes(prop)
-//   }
-//   if (element) {
-//     return element
-//   } else {
-//     return `No such contacts`
-//   }
-// }
-
+const isNameAndProperty = (name, property, arr) => {
+  const element = arr.find((element) => {
+    const keys = Object.keys(element);
+    return element.firstName === name && keys.includes(property);
+  });
+  if (element) {
+    return element[property];
+  } else {
+    return `No such contact.`;
+  }
+};
+console.log(isNameAndProperty("Hamed", "hobby", contacts));
+console.log(isNameAndProperty("Sherlock", "likes", contacts));
+console.log(isNameAndProperty("Sherlock", "hobby", contacts));
