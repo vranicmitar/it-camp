@@ -1,4 +1,4 @@
-// zadatak -->
+// zadatak --> iz niza izdvojiti pozitivne i cele brojeve
 
 const arr = [-3, 4.8, 5, 3, -3.2];
 const newArr = arr.filter((el) => el > 0 && el % 1 === 0);
@@ -6,7 +6,7 @@ const newArr2 = newArr.map((el) => el ** 2);
 
 console.log(newArr2);
 
-// Postoji built-in methoda u JS koja proverava da li je neki broj Integer (ceo) : -->
+// Postoji built-in methoda u JS koja proverava  da li je neki broj Integer (ceo) : -->
 
 // Number.isInteger()
 

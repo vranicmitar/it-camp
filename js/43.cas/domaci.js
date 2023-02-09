@@ -231,3 +231,19 @@ const wthls = (niz) => {
   return `Prosecna ocena filmova je ${niz5}.`;
 };
 console.log(wthls(watchList));
+
+// 2.nacin
+
+// const prosek = (arr) => {
+//   const nolanoviFilmovi = arr.filter(
+//     (element) => element.Director === "Christopher Nolan"
+//   );
+//   const duzina = nolanoviFilmovi.length;
+//   const suma = nolanoviFilmovi.reduce(
+//     (prevValue, currValue) => prevValue + Number(currValue.imdbRating),
+//     0
+//   );
+//   return suma / duzina;
+// };
+
+// console.log(prosek(watchList));
