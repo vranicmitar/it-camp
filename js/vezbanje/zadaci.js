@@ -39,8 +39,8 @@ console.log(zadatak("Ja sam isao u skola neko vreme a sada radim"));
 
 // Zadatak 1
 // Napisati program kojim se unosi niz od N elemenata i potom ispisuju elementi niza.
-niz = [0, 1, 2, 3, 4, 5, 6];
-console.log(niz);
+// niz = [0, 1, 2, 3, 4, 5, 6];
+// console.log(niz);
 
 // Zadatak 3
 // Formira se niz od N članova. Izračunati zbir elemenata niza.
@@ -166,8 +166,15 @@ console.log(remove([1, 2, 3, 3, 4, 4, 5, 5, 6])); // 1,2,3,4,5,6
 // Za unete nizove A od N i B od M celih brojeva, treba ispisati M elemenata niza A onim redosledom kako je navedeno u nizu B. Podrazumeva se da ni jedan elemenat niza B nije veći od N.
 // Npr. A=[23,52,38,44} i B=[3,1,1,2], ispisuje se 38, 23, 23, 52.
 
-let a = [23, 52, 38, 44];
-let b = [3, 1, 1, 2];
+const a = [23, 52, 38, 44];
+const b = [3, 1, 1, 2];
+function nizElemenata(arr1, arr2) {
+  const newArr = [];
+  for(i = 1; i < arr2.length; i++){
+    
+  }
+}
+console.log(nizElemenata([23, 52, 38, 44], [3, 1, 1, 2]));
 
 // 38,23,23,52
 
@@ -296,4 +303,3 @@ const niz1 = function (arr) {
   } in cart, shipping cost is ${shipping}, your total is ${suma + shipping}.`;
 };
 console.log(niz1(CART_DATA));
-
