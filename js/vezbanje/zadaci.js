@@ -170,9 +170,7 @@ const a = [23, 52, 38, 44];
 const b = [3, 1, 1, 2];
 function nizElemenata(arr1, arr2) {
   const newArr = [];
-  for(i = 1; i < arr2.length; i++){
-    
-  }
+  for (i = 1; i < arr2.length; i++) {}
 }
 console.log(nizElemenata([23, 52, 38, 44], [3, 1, 1, 2]));
 
@@ -303,3 +301,73 @@ const niz1 = function (arr) {
   } in cart, shipping cost is ${shipping}, your total is ${suma + shipping}.`;
 };
 console.log(niz1(CART_DATA));
+
+const ab = "Mitar Vranic";
+console.log(ab.slice(-5));
+
+// const rec = "Pera";
+// let novaRec = "";
+// for (let i = 0; i < rec.length; i++) {
+//   if (i === 0) {
+//     novaRec += rec[i + 1];
+//   } else if (i === 1) {
+//     novaRec += rec[i - 1];
+//   } else if (i === 2) {
+//     novaRec += rec[i + 1];
+//   } else if (i === 3) {
+//     novaRec += rec[i - 1];
+//   }
+// }
+// console.log(novaRec);
+
+function menjanje(recenica) {
+  let novaRecenica = "";
+  for (let i = 0; i < recenica.length; i++) {
+    if (recenica.length % 2 !== 0 && i === recenica.length - 1) {
+      novaRecenica += recenica[i];
+    } else if (i % 2 === 0) {
+      novaRecenica += recenica[i + 1];
+    } else if (i % 2 !== 0) {
+      novaRecenica += recenica[i - 1];
+    }
+  }
+  return novaRecenica;
+}
+console.log(menjanje("Pera ima devojku."));
+
+const novarecenica = "Spava mi se.";
+
+const char1 = novarecenica.charAt(3);
+const char11 = novarecenica.charAt(46);
+console.log(char1);
+console.log(char11); // rezultat je ""
+
+const char2 = novarecenica.charCodeAt(56);
+console.log(char2);
+console.log();
+
+const char3 = novarecenica[3];
+const char33 = novarecenica[32];
+console.log(char3);
+console.log(char33); // rezultat je undefined
+
+let z = 1.65;
+console.log(z.toPrecision());
+
+
+// Vezbanje nesto
+const cetvorocifreni = (num1) => {
+  const num2 = num1.toString();
+  let num3 = ``;
+  for (i = 0; i < num2.length; i++) {
+    if (num2.length !== 4) {
+      return `Broj mora biti cetvorocifren`;
+    } else if (i % 2 === 0) {
+      num3 += num2[i + 1];
+    } else if (i % 2 === 1) {
+      num3 += num2[i - 1];
+    }
+  }
+  return num3;
+};
+console.log(cetvorocifreni(1234));

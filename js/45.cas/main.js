@@ -11,6 +11,46 @@ const prinatj = (arr1, arr2) => {
 
 console.log(prinatj([23, 52, 38, 44], [3, 1, 1, 2]));
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // zadatak
 
 const count = (niz) => {
