@@ -354,7 +354,6 @@ console.log(char33); // rezultat je undefined
 let z = 1.65;
 console.log(z.toPrecision());
 
-
 // Vezbanje nesto
 const cetvorocifreni = (num1) => {
   const num2 = num1.toString();
@@ -371,3 +370,11 @@ const cetvorocifreni = (num1) => {
   return num3;
 };
 console.log(cetvorocifreni(1234));
+
+// 3 argumenta vraca najveci od njih
+
+const vratiiii = (par1, par2, par3) => Math.max(par1, par2, par3);
+console.log(vratiiii(1, 2, 3));
+
+let arr11 = [12, 56, 110, 50000, 56];
+console.log(Math.max.apply(Object, arr11));
