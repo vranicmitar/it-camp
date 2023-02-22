@@ -378,3 +378,5 @@ console.log(vratiiii(1, 2, 3));
 
 let arr11 = [12, 56, 110, 50000, 56];
 console.log(Math.max.apply(Object, arr11));
+
+
