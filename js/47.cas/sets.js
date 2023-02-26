@@ -150,7 +150,9 @@ console.log(yellowCard(gameEvents));
 console.log(
   `------------------------------------------------------------------------------------------------------`
 );
-
+console.log(
+  `------------------------------------------------------------------------------------------------------`
+);
 const frstSecHalf = (map4) => {
   for (let [key, value] of map4) {
     let poluvreme = key <= 45 ? "FIRST HALF" : "SECOND HALF";
