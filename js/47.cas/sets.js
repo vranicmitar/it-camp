@@ -105,25 +105,56 @@ console.log(myMap.entries());
 
 console.log(myMap.size);
 
-//  Zadatak
+// //  Zadatak
+// 1. Create an array 'events' of the different game events that happened (no duplicates)
+// 2. After the game has finished, it was found that the yellow card from 64 minutes was unfair. So remove this event from the game events log
+// 3. Print the following string to the console: "an event happened, on average, every 9 minutes"
+// 4. Loop over the events and log them to the console, marking whether it's in the first half or
+// the second half (after 45 min) of the game like this:
+//     [FIRST HALF] 17: ⚽ GOAL
+// */
 
 const gameEvents = new Map([
-  [17,`Goal`],
-  [36,`Subsitution`],
-  [47,`Goal`],
-  [61,`Subsitution`],
-  [64,`Yellow Card`],
-  [69,`Red Card`],
-  [70,`Subsitution`],
-  [72,`Subsitution`],
-  [76,`Goal`],
-  [80,`Goal`],
-  [92,`Yellow Card`],
-])
+  [17, "Goal"],
+  [17, "offside"],
+  [36, "Substitution"],
+  [47, "Goal"],
+  [61, "Substitution"],
+  [64, "Yellow card"],
+  [69, "Red card"],
+  [70, "Substitution"],
+  [72, "Substitution"],
+  [76, "Goal"],
+  [80, "Goal"],
+  [92, "Yellow card"],
+]);
 
 function events(someMap) {
-    const events = [
-    ]
-    const entries = someMap.entries()
-    
+  const events = [...new Set(someMap.values())];
+
+  return events;
 }
+console.log(events(gameEvents));
+console.log(
+  `------------------------------------------------------------------------------------------------------`
+);
+
+const yellowCard = (map2) => {
+  if (map2.has(64)) {
+    map2.delete(64);
+  }
+  return map2;
+};
+console.log(yellowCard(gameEvents));
+
+console.log(
+  `------------------------------------------------------------------------------------------------------`
+);
+
+const frstSecHalf = (map4) => {
+  for (let [key, value] of map4) {
+    let poluvreme = key <= 45 ? "FIRST HALF" : "SECOND HALF";
+    console.log(`[${poluvreme}] ${key}: ${value}`);
+  }
+};
+console.log(frstSecHalf(gameEvents));
