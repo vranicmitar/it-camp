@@ -109,7 +109,7 @@ console.log(myMap.size);
 // 1. Create an array 'events' of the different game events that happened (no duplicates)
 // 2. After the game has finished, it was found that the yellow card from 64 minutes was unfair. So remove this event from the game events log
 // 3. Print the following string to the console: "an event happened, on average, every 9 minutes"
-// 4. Loop over the events and log them to the console, marking whether it's in the first half or
+// 4. Loop over the events and log them to the console  , marking whether it's in the first half or
 // the second half (after 45 min) of the game like this:
 //     [FIRST HALF] 17: ⚽ GOAL
 // */
@@ -150,11 +150,20 @@ console.log(yellowCard(gameEvents));
 console.log(
   `------------------------------------------------------------------------------------------------------`
 );
+
+const average = (map5) => {
+  const keys = [...new Set(map5.keys())];
+  const keys2 = keys.reduce((prev, curr) => prev + curr);
+  const keys3 = (keys2 / keys.length).toFixed();
+  return keys3;
+};
+console.log(average(gameEvents));
+
 console.log(
   `------------------------------------------------------------------------------------------------------`
 );
 const frstSecHalf = (map4) => {
-  for (let [key, value] of map4) {
+  for ([key, value] of map4) {
     let poluvreme = key <= 45 ? "FIRST HALF" : "SECOND HALF";
     console.log(`[${poluvreme}] ${key}: ${value}`);
   }
