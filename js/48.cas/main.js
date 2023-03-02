@@ -70,3 +70,10 @@ console.log(izbaciPet(1, 9));
 // min([1,2,3,4,5], 'value') // => 1
 // min([1,2,3,4,5], 'index') // => 0
 
+const vratiNajmanji = (niz, tip) => {
+  let minIndex = 0; // index uvek 0
+  const ispis = tip === `value` ? Math.min(...niz) : minIndex;
+  return ispis;
+};
+console.log(vratiNajmanji([1, 2, 3, 4, 5], `value`)); // 1
+console.log(vratiNajmanji([1, 2, 3, 4, 5], `index`)); // 0
