@@ -50,7 +50,7 @@ console.log(person2.fullName());
 // ** U Global Scope this ukazzuje na global obejct
 
 // Zadatak
-
+x
 const vrati = (rec) => {
   const niz = [];
   for (i = 0; i < rec.length; i++) {

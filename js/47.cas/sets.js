@@ -135,9 +135,6 @@ function events(someMap) {
   return events;
 }
 console.log(events(gameEvents));
-console.log(
-  `------------------------------------------------------------------------------------------------------`
-);
 
 const yellowCard = (map2) => {
   if (map2.has(64)) {
@@ -147,21 +144,6 @@ const yellowCard = (map2) => {
 };
 console.log(yellowCard(gameEvents));
 
-console.log(
-  `------------------------------------------------------------------------------------------------------`
-);
-
-const average = (map5) => {
-  const keys = [...new Set(map5.keys())];
-  const keys2 = keys.reduce((prev, curr) => prev + curr);
-  const keys3 = (keys2 / keys.length).toFixed();
-  return keys3;
-};
-console.log(average(gameEvents));
-
-console.log(
-  `------------------------------------------------------------------------------------------------------`
-);
 const frstSecHalf = (map4) => {
   for ([key, value] of map4) {
     let poluvreme = key <= 45 ? "FIRST HALF" : "SECOND HALF";
