@@ -1,3 +1,3 @@
-// ASIHRONI JS 
+// ASIHRONI JS
 
-// Pogledati block scope funciton scope var 
+// Pogledati block scope funciton scope var
