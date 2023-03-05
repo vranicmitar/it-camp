@@ -413,3 +413,88 @@ console.log(min([10, 2, 3, 4, 5], "value"));
 let ar1 = [1, [1, 2], 1, 2, 3];
 let ar2 = ar1.fill(ar1);
 console.log(ar2);
+
+
+
+// Course zadatak
+class Course {
+  constructor(title, length, price) {
+    this.title = title;
+    this.length = length;
+    this._price = price;
+  }
+
+  get lengthPriceRatio() {
+    // Calculates the length/price value of the course.
+    return this.length / this._price;
+  }
+
+  get price() {
+    // Returns the price with a "$" in front of it.
+    return `$${this._price}`;
+  }
+
+  set price(value) {
+    // Sets the price to a positive value.
+    if (value > 0) {
+      this._price = value;
+    } else {
+      throw new Error("Price must be a positive value");
+    }
+  }
+
+  getCourseSummary() {
+    // Outputs a nice course summary including title, length, and price.
+    return `${this.title}: ${this.length} hours for ${this.price}`;
+  }
+}
+
+class PracticalCourse extends Course {
+  constructor(title, length, price, numOfExercises) {
+    super(title, length, price);
+    this.numOfExercises = numOfExercises;
+  }
+}
+
+class TheoreticalCourse extends Course {
+  constructor(title, length, price) {
+    super(title, length, price);
+  }
+
+  publish() {
+    console.log(`${this.title} has been published`);
+  }
+}
+
+const course1 = new Course("JavaScript Fundamentals", 10, 100);
+console.log(course1);
+console.log(course1.lengthPriceRatio); // 0.1
+console.log(course1.getCourseSummary()); // JavaScript Fundamentals: 10 hours for $100
+
+const course2 = new Course("HTML and CSS Basics", 8, 80);
+console.log(course2);
+console.log(course2.lengthPriceRatio); // 0.1
+console.log(course2.getCourseSummary()); // HTML and CSS Basics: 8 hours for $80
+
+const practicalCourse = new PracticalCourse("React Native", 20, 200, 50);
+console.log(practicalCourse);
+console.log(practicalCourse.getCourseSummary()); // React Native: 20 hours for $200
+
+const theoreticalCourse = new TheoreticalCourse(
+  "Algorithms and Data Structures",
+  15,
+  150
+);
+console.log(theoreticalCourse);
+theoreticalCourse.publish(); // Algorithms and Data Structures has been published
+
+// Set the price of the practical course to $300
+practicalCourse.price = 300;
+console.log(practicalCourse.getCourseSummary()); // React Native: 20 hours for $300
+
+// Try to set the price of the theoretical course to -100
+try {
+  theoreticalCourse.price = -100;
+} catch (error) {
+  console.log(error.message); // Price must be a positive value
+}

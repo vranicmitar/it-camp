@@ -32,7 +32,7 @@
 // // console.log(person1);
 // // console.log(person1.imeIPrezime());
 // // Person1 moze pristupiti bilo kojoj metodi iz klase Person(koja je napravljena na standardan nacin).
-// console.log(`---------------------------------------------------------------`);
+// // console.log(`---------------------------------------------------------------`);
 
 // class Product {
 //   static increaseForTen = 1.1;
@@ -52,8 +52,8 @@
 // const socks = new Product(`white socks`, 120, `100% cotton`, 50);
 // console.log(socks);
 
-// Ne mozemo pristupiti statickoj ,etodi iz objekta vec samo direktno preko klase
-// console.log(socks.IncreasePrice());
+// // Ne mozemo pristupiti statickoj ,etodi iz objekta vec samo direktno preko klase
+// // console.log(socks.IncreasePrice());
 
 // console.log(Product.increaseForTen);
 // console.log(Product.IncreasePrice());
