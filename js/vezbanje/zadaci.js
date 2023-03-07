@@ -410,6 +410,6 @@ function min(arr, returnMode) {
 }
 console.log(min([10, 2, 3, 4, 5], "value"));
 
-let ar1 = [1, [1, 2], 1, 2, 3];
-let ar2 = ar1.fill(ar1);
-console.log(ar2);
+// let ar1 = [1, [1, 2], 1, 2, 3];
+// let ar2 = ar1.fill(ar1);
+// console.log(ar2);

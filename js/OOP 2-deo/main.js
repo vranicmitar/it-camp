@@ -94,3 +94,5 @@ function izracunajPovrsinu(oblik) {
 console.log(izracunajPovrsinu(pravougaonik1));
 console.log(izracunajPovrsinu(krug1));
 
+
+

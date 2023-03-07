@@ -15,9 +15,10 @@ class Course {
       console.log(`${this.price} $`);
     } else {
       return `Price must be positive`;
-    }
+    } 
   }
 }
+
 const course1 = new Course("IT Camp", 9, 100);
 const course2 = new Course("OOP", 2, 80);
 console.log(course1);
