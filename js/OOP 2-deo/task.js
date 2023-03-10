@@ -10,12 +10,26 @@ class Course {
   summary() {
     return `${this.title}: ${this.length} hours for $${this.price}`;
   }
-  price1() {
-    if (this.price > 0) {
-      console.log(`${this.price} $`);
-    } else {
-      return `Price must be positive`;
-    } 
+  // price1() {
+  //   if (this.price > 0) {
+  //     console.log(`${this.price} $`);
+  //   } else {
+  //     return `Price must be positive`;
+  //   }
+  // }
+
+  get price() {
+    return this.price;
+  }
+  set(newPrice) {
+    try {
+      if (newPrice < 0) {
+        throw new Error(`Cena ne moze biti negativna`);
+      }
+      return (this.price = newPrice);
+    } catch (error) {
+      console.log(error.message);
+    }
   }
 }
 
