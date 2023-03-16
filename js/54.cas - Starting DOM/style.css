@@ -10,13 +10,13 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 15vh;
-  background-color: chocolate;
+  background-color: rgb(21, 143, 21);
 }
 
 .naslov {
   margin-left: 15%;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .searchbar {
@@ -74,11 +74,6 @@ header {
   font-size: 32px;
 }
 
-/* .drugi ul {
-  display: grid;
-  gap: 35px;
-} */
-
 .drugi ul li {
   margin-top: -1px;
   font-size: 18px;
@@ -114,6 +109,8 @@ header {
 }
 
 li button {
+  border-radius: 5px;
+  border: none;
   height: 35px;
   width: 30px;
   background-color: brown;
