@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  background-color: chocolate;
+}
+
+.naslov {
+  margin-left: 15%;
+  color: white;
+  font-size: 20px;
+}
+
+.searchbar {
+  margin-right: 15%;
+}
+
+.searchbar input {
+  width: 25rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.main {
+  margin-left: 15%;
+  margin-right: 15%;
+  border: 1.6px solid rgb(213, 209, 209);
+  padding: 10px 15px 5px 15px;
+  border-radius: 5px;
+}
+
+.prvi {
+  height: 20vh;
+  /* background-color: red; */
+}
+
+.drugi {
+  height: 50vh;
+  background-color: yellow;
+}
+
+.prvi h1 {
+  font-size: 38px;
+  color: black;
+}
+
+#input1 {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1.6px solid rgb(213, 209, 209);
+}
+.prvi button {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(61, 54, 54);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.drugi h1 {
+  font-size: 38px;
+}
