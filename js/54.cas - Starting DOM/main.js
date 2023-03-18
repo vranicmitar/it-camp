@@ -1,94 +1,159 @@
-// // console.dir(document); // prikazuje vise stvari clg.dir
+// // // console.dir(document); // prikazuje vise stvari clg.dir
 
-// console.log(document.domain);
-// console.log(document.title);
+// // console.log(document.domain);
+// // console.log(document.title);
 
-// let title = document.title;
-// title = `New Title`;
-// console.log(title);
+// // let title = document.title;
+// // title = `New Title`;
+// // console.log(title);
 
-// console.log(document.body);
-// console.log(document.all);
+// // console.log(document.body);
+// // console.log(document.all);
 
-// const headerTitle = document.all[10];
+// // const headerTitle = document.all[10];
+// // console.log(headerTitle);
+
+// // headerTitle.textContent = `new logo`;
+
+// // headerTitle.innerHTML = `<h1> new logo </h1>`;
+
+// // console.log(document.links);
+// // console.log(document.images);
+
+// // GET ELEMENT BY ID
+
+// const headerTitle = document.getElementById("logo");
 // console.log(headerTitle);
 
-// headerTitle.textContent = `new logo`;
+// headerTitle.innerHTML = "<em> New logo </em>";
 
-// headerTitle.innerHTML = `<h1> new logo </h1>`;
+// // PROMENA STILOVA
 
-// console.log(document.links);
-// console.log(document.images);
+// headerTitle.style.borderBottom = `solid 3px #000`;
 
-// GET ELEMENT BY ID
+// // GET ELEMENTS BY CLASS NAME
 
-const headerTitle = document.getElementById("logo");
-console.log(headerTitle);
+// let containers = document.getElementsByClassName(`main`);
 
-headerTitle.innerHTML = "<em> New logo </em>";
+// const container = containers[0];
+// container.style.backgroundColor = `red`;
+// container.style.border = `10px solid blue`;
 
-// PROMENA STILOVA
+// // GET ELEMENT BY TAG NAME
 
-headerTitle.style.borderBottom = `solid 3px #000`;
+// const listItems = document.getElementsByTagName("li");
+// // console.log(listItems); ---> NE RADI
 
-// GET ELEMENTS BY CLASS NAME
+// // for (i = 0; i < listItems.length; i++) {
+// //   if (i === 1) {
+// //     listItems[i].style.color = `white`;
+// //   } else listItems[i].style.color = `yellow`;
+// // }
 
-let containers = document.getElementsByClassName(`main`);
+// // QUERY SELECTOR
 
-const container = containers[0];
-container.style.backgroundColor = `red`;
-container.style.border = `10px solid blue`;
+// const header = document.querySelector(`#logo`);
+// const firstCont = document.querySelector(`.main`);
+// const firstLi = document.querySelector(`li`);
 
-// GET ELEMENT BY TAG NAME
+// console.log(header);
+// console.log(firstCont);
+// console.log(firstLi);
 
-const listItems = document.getElementsByTagName("li");
-// console.log(listItems); ---> NE RADI
+// firstLi.textContent = `first itemm`;
 
-// for (i = 0; i < listItems.length; i++) {
-//   if (i === 1) {
-//     listItems[i].style.color = `white`;
-//   } else listItems[i].style.color = `yellow`;
+// const input = document.querySelector(`input`);
+// input.value = `Hello world`;
+
+// const input2 = document.querySelector(`input[type ='email']`);
+// // input2.value = `test@test.com`;
+
+// // input2.placeholder = `Unesite vasu email adresu`;
+
+// // QUERY SELECTOR ALL
+
+// const listItems2 = document.querySelectorAll(`li`);
+// console.log(listItems2);
+
+// const evenLi = document.querySelector(`li:nth-child(even)`);
+// const oddLi = document.querySelector(`li:nth-child(odd)`);
+
+// for (b = 0; b < oddLi.length; b++) {
+//   oddLi[b].style.backgroundColor = `yellow`;
+//   evenLi[b].style.backgroundColor = `blue`;
 // }
 
-// QUERY SELECTOR
+// // parrentNode
 
-const header = document.querySelector(`#logo`);
-const firstCont = document.querySelector(`.main`);
-const firstLi = document.querySelector(`li`);
+// // const title = document.getElementById(`naslov`);
+// // console.log(title.parentNode);
 
-console.log(header);
-console.log(firstCont);
-console.log(firstLi);
+// // // childNode
 
-firstLi.textContent = `first itemm`;
+// // const container1 = document.getElementById(`main`);
+// // console.log(container1.childNodes);
 
-const input = document.querySelector(`input`);
-input.value = `Hello world`;
+// // CERATE ELEMENT
 
-const input2 = document.querySelector(`input[type ='email']`);
-// input2.value = `test@test.com`;
+// const newDiv = document.createElement(`div`);
+// console.log(newDiv);
 
-// input2.placeholder = `Unesite vasu email adresu`;
+// // ADD Class
+
+// newDiv.className = `newDiv`;
+
+// container.appendChild(newDiv);
+
+// // ADD ID
+
+// newDiv.id = `newId`;
+
+// input2.setAttribute(`placeholder`, `Unesi email breeee!!!`);
+
+// GET ELEMENT BY ID
+// const logo = document.getElementById(`logo`);
+// console.log(logo);
+
+// // GET ELEMENT BY CLASS NAME
+
+// const listItems = document.getElementsByClassName(`main`);
+// console.log(listItems);
+
+// // GET ELEMENT BY TAG NAME
+
+// const li = document.getElementsByTagName(`li`);
+// console.log(li);
+
+// // QUERY SELECTOR
+
+// const main = document.querySelector(`div`);
+// console.log(main);
 
 // QUERY SELECTOR ALL
 
-const listItems2 = document.querySelectorAll(`li`);
-console.log(listItems2);
+// const main1 = document.querySelectorAll(`div`);
+// console.log(main1);
 
-const evenLi = document.querySelector(`li:nth-child(even)`);
-const oddLi = document.querySelector(`li:nth-child(odd)`);
+// DOM MANIPULATION
 
-for (b = 0; b < oddLi.length; b++) {
-  oddLi[b].style.backgroundColor = `yellow`;
-  evenLi[b].style.backgroundColor = `blue`;
-}
+// const logo = document.querySelector(`#logo`);
+// logo.style.color = `blue`;
 
-// parrentNode
+// STYLING ELEMENTS --->
 
-const title = document.getElementById(`naslov`);
-console.log(title.parentNode);
+// const list = document.querySelectorAll(`.ulli`);
+// // list.style.color = `white`;  NE MOZE OVAKO
 
-// childNode
+// for (i = 0; i < list.length; i++) {
+//   list[i].style.fontSize = `2.5rem`;
+// }
 
-const container1 = document.getElementById(`main`);
-console.log(container1.childNodes);
+// console.log(list);
+
+// CREATING ELEMENTS ----->
+
+const ul = document.querySelector(`ul`);
+const li = document.createElement(`li`);
+ 
+ul.append(li);
+console.log();
