@@ -26,32 +26,33 @@
       <div class="prvi">
         <h1>Add Items</h1>
         <br />
-        <input type="text" id="input1" />
-        <button type="submit">Submit</button>
+        <form>
+          <input type="text" id="input1" />
+          <button type="submit" id="batn">Submit</button>
+        </form>
       </div>
 
       <!-- drugi deo main diva -->
       <div class="drugi">
-        <h1>Items</h1>
+        <h1 id="naslov-lista">Items</h1>
         <br /><br /><b></b>
-        <div class="ulli">
-          <ul>
-            <li id="prvi">
-              Item1 <button type="close"><i class="fa-solid fa-x"></i></button>
-            </li>
-            <li id="drugi">
-              Item2<button type="close"><i class="fa-solid fa-x"></i></button>
-            </li>
-            <li id="treci">
-              Item3<button type="close"><i class="fa-solid fa-x"></i></button>
-            </li>
-            <li id="cetvrti">
-              Item4<button type="close"><i class="fa-solid fa-x"></i></button>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li id="prvi" class="list-items">
+            Item1 <button type="close"><i class="fa-solid fa-x"></i></button>
+          </li>
+          <li id="drugi" class="list-items">
+            Item2<button type="close"><i class="fa-solid fa-x"></i></button>
+          </li>
+          <li id="treci" class="list-items">
+            Item3<button type="close"><i class="fa-solid fa-x"></i></button>
+          </li>
+          <li id="cetvrti" class="list-items">
+            Item4<button type="close"><i class="fa-solid fa-x"></i></button>
+          </li>
+        </ul>
+
+        <!-- <h1>brate</h1> -->
       </div>
     </div>
   </body>
 </html>
-

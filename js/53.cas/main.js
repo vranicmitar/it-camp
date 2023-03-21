@@ -48,5 +48,3 @@ const getUsers = async () => {
 getUsers()
   .then((data) => console.log(data))
   .catch((error) => console.log(error.message));
-
-  

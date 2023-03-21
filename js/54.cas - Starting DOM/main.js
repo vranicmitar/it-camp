@@ -109,6 +109,25 @@
 // newDiv.id = `newId`;
 
 // input2.setAttribute(`placeholder`, `Unesi email breeee!!!`);
+// console.log (input2.getAttribute("placeholder"));
+
+let button = document.querySelector("#batn");
+button.addEventListener("click", buttonClicked);
+
+function buttonClicked() {
+  //   console.log(event);
+  //   console.log(event.target.className);
+  //   console.log(event.target.classList);
+
+  //   //   console.log(event.clientX);
+  //   //   console.log(event.clientY);
+
+  //   console.log(event.altKey);
+  //   console.log(event.ctrlKey);
+  // console.log(event.shiftKey)
+  button.style.backgroundColor = `red`;
+  button.style.color = `white`;
+}
 
 // GET ELEMENT BY ID
 // const logo = document.getElementById(`logo`);
@@ -152,8 +171,101 @@
 
 // CREATING ELEMENTS ----->
 
-const ul = document.querySelector(`ul`);
-const li = document.createElement(`li`);
- 
-ul.append(li);
-console.log();
+// const ul = document.querySelector(`ul`);
+// const li = document.createElement(`li`);
+// // ADDING ELEMENTS
+// ul.append(li);
+
+// MODIFYING THE TEXT
+
+// Pristupanje text-u
+// const firstItem = document.querySelector("#prvi");
+// console.log(firstItem.innerText); // pristupanje textu
+
+// li.innerText = `Item666`;
+
+// MODIFYING ATTRIBUTES & CLASSES
+
+// li.setAttribute("id", "naslov-lista");
+// li.removeAttribute("id");
+
+// const title = document.querySelector("#drugi");
+// console.log(title.getAttribute("id"));
+
+//  li.classList.add(`list-items`); // dodaje element u listu
+
+// console.log(li.classList.contains(`list-items`)); // proverava da li je element dodat u listu
+
+// PARENT NODE
+// let ull = document.querySelector("ul");
+// // console.log(ull.parentNode);
+// // console.log(ull.parentElement.parentElement);
+
+// const html = document.documentElement;
+// console.log(html.parentNode);
+// console.log(html.parentElement);
+
+// CHILD NODE
+
+let ull = document.querySelector(`ul`);
+// console.log(ull.childNodes);
+// console.log(ull.firstChild);
+// console.log(ull.lastChild);
+
+// ull.childNodes[1].style.backgroundColor = "blue"; nekako radi ?
+
+// console.log(ull.children);
+// console.log(ull.firstElementChild);
+// console.log(ull.lastElementChild);
+
+// SIBLING NODE TRAVERSAL
+
+// console.log(ull.previousElementSibling);
+// console.log(ull.nextElementSibling);
+
+let cetvrti = document.querySelector(`#cetvrti`);
+// cetvrti.addEventListener("dblclick", runEvent);
+// cetvrti.addEventListener("dblclick", runEvent);
+// cetvrti.addEventListener("mouseup", runEvent);
+// cetvrti.addEventListener("mouseenter", runEvent);
+// cetvrti.addEventListener("mouseleave", runEvent);
+// cetvrti.addEventListener("mousemove", runEvent);
+
+// cetvrti.addEventListener("keydown", runEvent);
+// cetvrti.addEventListener("keyup", runEvent);
+// cetvrti.addEventListener("keypress", runEvent);
+
+// function runEvent(event) {
+//   console.log(`Type of event:` + event.type);
+// }
+
+let input = document.querySelector(`#input1`);
+// // input.addEventListener(`input`, getValue);
+// input.addEventListener(`input`, getValue);
+
+// function getValue(e) {
+//   let itemValue = e.target.value;
+//   console.log(itemValue);
+// }
+
+let form = document.querySelector(`form`);
+form.addEventListener(`submit`, getValues);
+
+function getValues(e) {
+  e.preventDefault();
+  let input = document.querySelector(`#input1`);
+  let itemName = input.value;
+  console.log(itemName);
+
+  input.value = "";
+}
+
+let deleteButton = document.createElement(`button`);
+const textDeleteButton = (document.createTextNode = "X");
+deleteButton.className = `deletebtn`;
+deleteButton.append(textDeleteButton);
+
+let lis = document.querySelectorAll(`li`);
+let li = lis[lis.length - 1];
+li.appendChild(deleteButton);
+console.log(deleteButton);

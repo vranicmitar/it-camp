@@ -7,3 +7,5 @@ const getComments = () => {
     .catch((error) => console.log(error.message));
 };
 getComments();
+
+
