@@ -11,7 +11,7 @@ button.addEventListener("click", function () {
   deleteButton.innerText = `Delete`;
   deleteButton.addEventListener(`click`, deletebtn);
 
-  function deletebtn(e) {
+  function deletebtn() {
     cerateLi.remove();
   }
 
@@ -19,4 +19,3 @@ button.addEventListener("click", function () {
   lista.append(cerateLi);
   input.value = "";
 });
-
