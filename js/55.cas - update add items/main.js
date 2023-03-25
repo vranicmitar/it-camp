@@ -1,5 +1,5 @@
 let input = document.querySelector("#input");
-let button = document.querySelector("#batn");
+let button = document.querySelector("button");
 let lista = document.querySelector("#lista");
 
 button.addEventListener("click", function () {
@@ -19,3 +19,4 @@ button.addEventListener("click", function () {
   lista.append(cerateLi);
   input.value = "";
 });
+
