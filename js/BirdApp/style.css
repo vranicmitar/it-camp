@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 15vh;
+  background-image: linear-gradient(90deg, #ee3461 0%, #ef4223 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 12.5rem;
+  height: 2rem;
+}
