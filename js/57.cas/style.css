@@ -39,7 +39,11 @@ input {
 
 .left {
   margin-top: 70px;
-  margin-left: 410px;
+  margin-left: 400px;
+  width: 380px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .left button {
@@ -62,7 +66,7 @@ input {
 .right {
   margin-left: 300px;
   font-size: 25px;
-  margin-top: 70px;
+  margin-top: 10px;
 }
 
 span {
