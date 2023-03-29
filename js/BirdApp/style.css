@@ -10,8 +10,63 @@ header {
   justify-content: center;
   align-items: center;
 }
-
+body {
+  background: #acb6e5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #86fde8,
+    #acb6e5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #86fde8,
+    #acb6e5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 header img {
   width: 12.5rem;
   height: 2rem;
+}
+
+.videos {
+  width: 90vw;
+  height: 200vh;
+  display: grid;
+  grid-template-columns: repeat(5, 260px);
+  grid-auto-rows: 250px;
+  grid-gap: 30px;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-item {
+  background-color: white;
+  /* border: 1px solid rgb(83, 82, 82); */
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.video-item:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.video-item h1 {
+  padding: 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.video-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.video-item img {
+  border-radius: 5px 5px 0px 0px;
+  width: 260px;
 }
