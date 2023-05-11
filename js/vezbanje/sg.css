@@ -6,17 +6,17 @@ body {
   display: flex;
   justify-content: center;
 }
-/* .nmp {
+.nmp {
   width: 90vw;
   height: 250vh;
   background-color: yellow;
   display: grid;
-  grid-template-columns: repeat(5, 230px);
-  grid-auto-rows: 350px;
-  grid-gap: 30px;
+  grid-template-columns: repeat(3, 350px);
+  grid-auto-rows: 300px;
+  grid-gap: 40px;
   justify-content: center;
 }
 
 .box1 {
   background-color: blue;
-} */
+}

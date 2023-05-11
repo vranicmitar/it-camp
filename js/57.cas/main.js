@@ -28,7 +28,9 @@ button.addEventListener(`click`, function () {
     if (score > 1) {
       poruka(broj > tajniBroj ? `Previse visoko ` : `Previse nisko`);
       score--;
+      highscore--;
       document.querySelector(`.score-span`).textContent = score;
+      document.querySelector(`.highscore-span`).textContent = highscore;
     } else {
       poruka(`Izgubili ste`);
       document.querySelector(`.score-span`).textContent = 0;
